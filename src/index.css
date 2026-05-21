@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-slate-950: #0B0F17;
+  --color-slate-900: #131A26;
+  --color-slate-800: #1E293B;
+  --color-slate-750: #253346;
+  --color-slate-700: #2E3E56;
+  --color-slate-600: #475569;
+  --color-slate-500: #64748b;
+
+  --color-emerald-500: #10b981;
+  --color-emerald-400: #34d399;
+
+  --color-cyan-500: #00D4FF;
+  --color-cyan-400: #33e0ff;
+
+  --color-memphis-pink: #FF6B9D;
+  --color-memphis-teal: #00D4FF;
+  --color-memphis-purple: #7952B3;
+  --color-memphis-cream: #fafaf6;
+  --color-memphis-black: #0B0F17;
+  --color-memphis-card: #131A26;
+  --color-memphis-border: #1E293B;
+
+  --font-poppins: "Poppins", "Inter", sans-serif;
+}
+
+/* Neubrutalism Card and Button utilities */
+.card-neubrutal {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .card-neubrutal {
+  background-color: #131A26;
+  border-color: #1E293B;
+}
+
+.card-neubrutal:hover {
+  border-color: #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+  transform: translate(-1px, -1px);
+}
+
+.dark .card-neubrutal:hover {
+  border-color: #2E3E56;
+}
+
+.btn-neubrutal {
+  border: 2px solid #000000;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-neubrutal:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.btn-neubrutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.btn-neubrutal:disabled {
+  opacity: 0.5;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+.btn-neubrutal-sec {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+  box-shadow: 3px 3px 0px 0px #000000;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .btn-neubrutal-sec {
+  background-color: #1E293B;
+  border-color: #2E3E56;
+  color: #e2e8f0;
+}
+
+.btn-neubrutal-sec:hover {
+  background-color: #f1f5f9;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-color: #000000;
+}
+
+.dark .btn-neubrutal-sec:hover {
+  background-color: #2E3E56;
+  border-color: #475569;
+}
+
+.btn-neubrutal-sec:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+.btn-neubrutal-sec:disabled {
+  opacity: 0.5;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+/* Subtle dots background decoration */
+.memphis-dots {
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  background-color: #fafaf6;
+}
+
+.dark .memphis-dots {
+  background-image: radial-gradient(#1E293B 1.2px, transparent 1.2px);
+  background-color: #0B0F17;
+}
+
+/* Glassmorphism legacy aliases to prevent compile breaks */
+.glass-panel {
+  background-color: #131A26;
+  border: 1px solid #1E293B;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel-light {
+  background-color: #1a2332;
+  border: 1px solid #253346;
+}
+
+/* Custom Scrollbar for developer coding aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafaf6;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E293B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #2E3E56;
+}
+
+/* A4 Print Styles & Render Overrides */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    padding: 15mm 20mm !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+    color: black !important;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  .dark {
+    color-scheme: light !important;
+  }
+
+  .dark .print-page {
+    background: white !important;
+    color: black !important;
+  }
+
+  .dark .print-page * {
+    color: black !important;
+    border-color: black !important;
+    background: transparent !important;
+  }
+}
+
+.preview-canvas {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 18mm 20mm;
+  background-color: white !important;
+  color: #0b0f17 !important;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Force dark text and boundaries inside the preview sheet regardless of global dark mode */
+.preview-canvas,
+.preview-canvas * {
+  color: #0b0f17 !important;
+  background-color: transparent !important;
+}
+
+.dark .preview-canvas,
+.dark .preview-canvas * {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.preview-canvas h1,
+.preview-canvas h2,
+.preview-canvas h3,
+.preview-canvas strong {
+  color: #000000 !important;
+}
+
+.dark .preview-canvas h1,
+.dark .preview-canvas h2,
+.dark .preview-canvas h3,
+.dark .preview-canvas strong {
+  color: #fff !important;
+}
+
+.preview-canvas a {
+  color: #2563eb !important;
+  text-decoration: underline !important;
+}
+
+.preview-canvas .text-slate-400,
+.preview-canvas .text-slate-400 *,
+.preview-canvas span.text-slate-400 {
+  color: #64748b !important;
+}
+
+.preview-canvas .text-slate-500,
+.preview-canvas .text-slate-500 *,
+.preview-canvas span.text-slate-500 {
+  color: #475569 !important;
+}
+
+.dark .preview-canvas .text-slate-500,
+.dark .preview-canvas .text-slate-500 *,
+.dark .preview-canvas span.text-slate-500 {
+  color: #abafb5 !important;
+}
+
+.preview-canvas border-slate-300,
+.preview-canvas .border-slate-300,
+.preview-canvas hr,
+.preview-canvas .border-b {
+  border-color: #cbd5e1 !important;
+}
+
+@media (max-width: 1280px) {
+  .preview-wrapper {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .preview-wrapper {
+    transform: scale(0.75);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-wrapper {
+    transform: scale(0.65);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview-wrapper {
+    transform: scale(0.5);
+    transform-origin: top center;
+  }
+}
