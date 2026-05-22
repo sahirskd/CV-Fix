@@ -188,7 +188,7 @@ export default function App() {
           }
         }
       } catch (e) {
-        console.log('Local keyless Gemini CLI is not active.');
+        console.log('Local keyless Gemini CLI is not active.', e);
       }
     }
     loadData();
@@ -849,11 +849,12 @@ export default function App() {
 
                 {/* Visual aggregated score grade badge */}
                 <div className="flex items-center space-x-4 bg-[#fafaf6] dark:bg-[#0B0F17] border-2 border-black dark:border-[#1E293B] p-3.5 rounded-xl shadow-[3px_3px_0_0_#000]">
-                  <div className={`h-14 w-14 rounded-full flex items-center justify-center text-2xl font-black font-mono tracking-tight ${scorecard.overallGrade === 'A' ? 'bg-emerald-500 text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
-                    scorecard.overallGrade === 'B' ? 'bg-memphis-teal text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
-                      scorecard.overallGrade === 'C' ? 'bg-memphis-purple text-white border-2 border-black shadow-[2px_2px_0_0_#000]' :
-                        scorecard.overallGrade === 'D' ? 'bg-amber-400 text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
-                          'bg-rose-500 text-white border-2 border-black shadow-[2px_2px_0_0_#000]'
+                  <div className={`h-14 w-14 rounded-full flex items-center justify-center text-2xl font-black font-mono tracking-tight 
+                  ${scorecard.overallGrade === 'A' || scorecard.overallGrade === 'A-' || scorecard.overallGrade === 'A+' ? 'bg-emerald-500 text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
+                      scorecard.overallGrade === 'B' || scorecard.overallGrade === 'B-' || scorecard.overallGrade === 'B+' ? 'bg-memphis-teal text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
+                        scorecard.overallGrade === 'C' || scorecard.overallGrade === 'C-' || scorecard.overallGrade === 'C+' ? 'bg-memphis-purple text-white border-2 border-black shadow-[2px_2px_0_0_#000]' :
+                          scorecard.overallGrade === 'D' || scorecard.overallGrade === 'D-' || scorecard.overallGrade === 'D+' ? 'bg-amber-400 text-slate-950 border-2 border-black shadow-[2px_2px_0_0_#000]' :
+                            'bg-rose-500 text-white border-2 border-black shadow-[2px_2px_0_0_#000]'
                     }`}>
                     {scorecard.overallGrade}
                   </div>
