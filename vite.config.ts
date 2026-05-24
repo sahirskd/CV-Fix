@@ -13,8 +13,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Career-Ops PWA',
-        short_name: 'CareerOps',
+        name: 'CV-Fix',
+        short_name: 'CV-Fix',
         description: 'LaTeX Resume Tailoring & Optimization Command Center',
         theme_color: '#0f172a',
         background_color: '#0f172a',
@@ -45,23 +45,23 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           const url = new URL(req.url || '', 'http://localhost');
-          
+
           if (url.pathname === '/api/gemini-cli/status') {
-            res.writeHead(200, { 
+            res.writeHead(200, {
               'Content-Type': 'application/json',
               'Cache-Control': 'no-store'
             });
             res.end(JSON.stringify({ available: true }));
             return;
           }
-          
+
           if (url.pathname === '/api/gemini-cli' && req.method === 'POST') {
             let body = '';
-            
+
             req.on('data', chunk => {
               body += chunk;
             });
-            
+
             req.on('end', () => {
               try {
                 const { prompt } = JSON.parse(body);
@@ -70,21 +70,21 @@ export default defineConfig({
                   res.end(JSON.stringify({ error: 'Prompt is required' }));
                   return;
                 }
-                
+
                 // Spawn the local CLI command in non-interactive/headless mode
                 const geminiProcess = spawn('gemini', ['-p', prompt, '--skip-trust', '--yolo']);
-                
+
                 let stdout = '';
                 let stderr = '';
-                
+
                 geminiProcess.stdout.on('data', data => {
                   stdout += data.toString();
                 });
-                
+
                 geminiProcess.stderr.on('data', data => {
                   stderr += data.toString();
                 });
-                
+
                 geminiProcess.on('close', code => {
                   if (code === 0) {
                     res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -95,13 +95,13 @@ export default defineConfig({
                     res.end(JSON.stringify({ error: `Gemini CLI failed (exit code ${code}): ${stderr || 'Process exited with non-zero code.'}` }));
                   }
                 });
-                
+
                 geminiProcess.on('error', err => {
                   console.error('Failed to start Gemini CLI:', err);
                   res.writeHead(500, { 'Content-Type': 'application/json' });
                   res.end(JSON.stringify({ error: `Failed to run Gemini CLI: ${err.message}. Ensure gemini is installed in your local system path.` }));
                 });
-                
+
               } catch (err) {
                 const error = err as Error;
                 res.writeHead(500, { 'Content-Type': 'application/json' });
@@ -110,7 +110,7 @@ export default defineConfig({
             });
             return;
           }
-          
+
           next();
         });
       }

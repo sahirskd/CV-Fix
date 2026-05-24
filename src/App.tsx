@@ -180,11 +180,20 @@ export default function App() {
 
       // Check if local Gemini CLI is available via status API
       try {
-        const res = await fetch('/api/gemini-cli/status');
-        if (res.ok) {
-          const data = await res.json();
-          if (data.available) {
+        const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window;
+        if (isTauri) {
+          const { invoke } = await import('@tauri-apps/api/core');
+          const available = await invoke<boolean>('check_gemini_cli_status');
+          if (available) {
             setIsCliAvailable(true);
+          }
+        } else {
+          const res = await fetch('/api/gemini-cli/status');
+          if (res.ok) {
+            const data = await res.json();
+            if (data.available) {
+              setIsCliAvailable(true);
+            }
           }
         }
       } catch (e) {
@@ -339,10 +348,10 @@ export default function App() {
           </div>
           <div>
             <h1 className="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white m-0 leading-none font-poppins">
-              Career<span className="text-memphis-pink">Ops</span> PWA
+              CV-<span className="text-memphis-pink">Fix</span>
             </h1>
             <span className="text-[9px] text-slate-750 dark:text-slate-400 font-mono tracking-wider uppercase font-bold mt-1 block">
-              your career operations hub
+              your local resume tailoring hub
             </span>
           </div>
         </div>
@@ -433,7 +442,7 @@ export default function App() {
                 </select>
                 {selectedModel === 'cli' && (
                   <div className="bg-emerald-500/10 border-2 border-emerald-500/30 text-emerald-600 dark:text-emerald-400 rounded-lg p-3 text-xs leading-relaxed font-mono mt-3">
-                    💡 <strong>CLI Mode Active</strong>: Career-Ops is utilizing your local Gemini CLI setup. No web API keys are required.
+                    💡 <strong>CLI Mode Active</strong>: CV-Fix is utilizing your local Gemini CLI setup. No web API keys are required.
                   </div>
                 )}
               </div>
