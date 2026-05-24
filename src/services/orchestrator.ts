@@ -21,8 +21,8 @@ export interface OptimizationResponse {
   optimizedTex: string;
 }
 
-// System prompts based on the Santifer Career-Ops pipeline
-const SYSTEM_PROMPT = `You are Career-Ops PWA, an expert Principal Technical Resume Architect and Senior Recruiter. 
+// System prompts based on the Santifer CV-Fix pipeline
+const SYSTEM_PROMPT = `You are CV-Fix, an expert Principal Technical Resume Architect and Senior Recruiter. 
 Your core capability is executing a high-precision, 3-phase tailoring operation on a candidate's Master LaTeX Resume against a target Job Description.
 
 Your goal is to optimize the resume so it excels in applicant tracking systems (ATS), matches hiring manager expectations, and maximizes the candidate's chance of landing an interview, while keeping the LaTeX compilation perfectly intact.
@@ -129,7 +129,7 @@ export function parseModelResponse(rawText: string): OptimizationResponse {
     const evalStartIdx = rawText.indexOf('<<<EVALUATION_START>>>');
     const evalEndIdx = rawText.indexOf('<<<EVALUATION_END>>>');
     let evalText = '';
-    
+
     if (evalStartIdx !== -1 && evalEndIdx !== -1) {
       evalText = rawText.slice(evalStartIdx + '<<<EVALUATION_START>>>'.length, evalEndIdx).trim();
     } else {
@@ -210,7 +210,7 @@ function extractHeadingSection(source: string, heading: string): string {
       capturing = true;
       continue;
     }
-    
+
     // Stop capturing when hitting the next heading
     if (capturing && (line.startsWith('#### ') || line.startsWith('### ') || line.startsWith('<<<'))) {
       break;
@@ -230,7 +230,7 @@ function extractHeadingSection(source: string, heading: string): string {
  */
 async function callGemini(apiKey: string, masterTex: string, jobDesc: string, userTweak: string): Promise<string> {
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-  
+
   const prompt = `
   MASTER LATEX RESUME:
   ${masterTex}
@@ -396,7 +396,7 @@ export async function tailorResume(
   userTweak: string,
   onProgress?: (progressMessage: string) => void
 ): Promise<OptimizationResponse> {
-  
+
   if (modelProvider !== 'cli' && !apiKey) {
     throw new Error(`Please configure your API key in settings for ${modelProvider === 'gemini' ? 'Google Gemini' : 'Anthropic Claude'}.`);
   }
@@ -409,7 +409,7 @@ export async function tailorResume(
 
   try {
     if (onProgress) onProgress('[1/3] Parsing inputs & aligning prompts...');
-    
+
     let rawResult = '';
     if (modelProvider === 'gemini') {
       if (onProgress) onProgress('[2/3] Calling Gemini model & evaluating dimensions...');
@@ -424,7 +424,7 @@ export async function tailorResume(
 
     if (onProgress) onProgress('[3/3] Mutating LaTeX code nodes & structure...');
     const parsedData = parseModelResponse(rawResult);
-    
+
     return parsedData;
   } catch (error) {
     const err = error as Error;
