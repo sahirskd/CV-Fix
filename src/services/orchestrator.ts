@@ -352,6 +352,18 @@ async function callLocalCli(masterTex: string, jobDesc: string, userTweak: strin
   ${userTweak || 'None specified. Perform standard high-performance alignment.'}
   `;
 
+  // Detect if running inside Tauri desktop environment
+  const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window;
+  if (isTauri) {
+    try {
+      const { invoke } = await import('@tauri-apps/api/core');
+      return await invoke<string>('run_gemini_cli', { prompt: fullPrompt });
+    } catch (err) {
+      console.error('Tauri native run_gemini_cli command failed:', err);
+      throw new Error(`Tauri native execution failed: ${err}`);
+    }
+  }
+
   const response = await fetch('/api/gemini-cli', {
     method: 'POST',
     headers: {

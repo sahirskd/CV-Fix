@@ -180,11 +180,20 @@ export default function App() {
 
       // Check if local Gemini CLI is available via status API
       try {
-        const res = await fetch('/api/gemini-cli/status');
-        if (res.ok) {
-          const data = await res.json();
-          if (data.available) {
+        const isTauri = typeof window !== 'undefined' && '__TAURI_INTERNALS__' in window;
+        if (isTauri) {
+          const { invoke } = await import('@tauri-apps/api/core');
+          const available = await invoke<boolean>('check_gemini_cli_status');
+          if (available) {
             setIsCliAvailable(true);
+          }
+        } else {
+          const res = await fetch('/api/gemini-cli/status');
+          if (res.ok) {
+            const data = await res.json();
+            if (data.available) {
+              setIsCliAvailable(true);
+            }
           }
         }
       } catch (e) {
