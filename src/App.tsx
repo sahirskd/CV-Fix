@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Editor from '@monaco-editor/react';
+import cvFixLogo from './assets/cv-fix-logo-rect.png';
 import {
   Briefcase,
   Code2,
@@ -344,7 +345,7 @@ export default function App() {
       <header className="sticky top-0 z-40 w-full bg-white dark:bg-[#0B0F17] border-b-2 border-black dark:border-[#1E293B] px-4 py-3.5 flex justify-between items-center no-print">
         <div className="flex items-center space-x-3">
           <div className="h-12 w-20 px-2 bg-white dark:bg-[#1E293B] border-2 border-black rounded-lg flex items-center justify-center text-memphis-purple dark:text-memphis-pink shadow-[2px_2px_0_0_#000]">
-            <img src="/src/assets/cv-fix-logo-rect.png" alt="logo" className="w-20 dark:invert" />
+            <img src={cvFixLogo} alt="logo" className="w-20 dark:invert" />
           </div>
           <div>
             <h1 className="text-lg font-extrabold tracking-tight text-slate-900 dark:text-white m-0 leading-none font-poppins">
