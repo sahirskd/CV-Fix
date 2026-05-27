@@ -1,0 +1,202 @@
+{
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/tsconfig.node.json": {
+    "mtime": 1779371060.4608982,
+    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
+    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/tsconfig.app.json": {
+    "mtime": 1779371060.4607167,
+    "ast_hash": "136630b5accce1ca50663df229534a26",
+    "semantic_hash": "136630b5accce1ca50663df229534a26"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/package.json": {
+    "mtime": 1779653748.347196,
+    "ast_hash": "0d7fc46bfba34bc7e8ec9034371b9506",
+    "semantic_hash": "0d7fc46bfba34bc7e8ec9034371b9506"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/tsconfig.json": {
+    "mtime": 1779371060.460807,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/eslint.config.js": {
+    "mtime": 1779371060.4590943,
+    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
+    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/vite.config.ts": {
+    "mtime": 1779653748.3587205,
+    "ast_hash": "654987f94418843611b4d3227b5d0485",
+    "semantic_hash": "654987f94418843611b4d3227b5d0485"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/tauri.conf.json": {
+    "mtime": 1779653748.3580792,
+    "ast_hash": "d4124f074921afb51a259cb2dfef4c9b",
+    "semantic_hash": "d4124f074921afb51a259cb2dfef4c9b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/build.rs": {
+    "mtime": 1779653748.3497155,
+    "ast_hash": "9e949d967099bcc42cfa6f8765a6c938",
+    "semantic_hash": "9e949d967099bcc42cfa6f8765a6c938"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/capabilities/default.json": {
+    "mtime": 1779653748.3499095,
+    "ast_hash": "eaadc698fdc17d6a18f32c3f36a0349b",
+    "semantic_hash": "eaadc698fdc17d6a18f32c3f36a0349b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/gen/schemas/capabilities.json": {
+    "mtime": 1779650769.187302,
+    "ast_hash": "e04e99f1b01a6dfab195659570cb39f0",
+    "semantic_hash": "e04e99f1b01a6dfab195659570cb39f0"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/gen/schemas/acl-manifests.json": {
+    "mtime": 1779650769.1815133,
+    "ast_hash": "b849cb752c4dc91e746bca7e411dc9ae",
+    "semantic_hash": "b849cb752c4dc91e746bca7e411dc9ae"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/gen/schemas/macOS-schema.json": {
+    "mtime": 1779650769.1862237,
+    "ast_hash": "44a32f28e297a982b5b11885645d377b",
+    "semantic_hash": "44a32f28e297a982b5b11885645d377b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/gen/schemas/desktop-schema.json": {
+    "mtime": 1779650769.1862237,
+    "ast_hash": "44a32f28e297a982b5b11885645d377b",
+    "semantic_hash": "44a32f28e297a982b5b11885645d377b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/src/lib.rs": {
+    "mtime": 1779653748.3566923,
+    "ast_hash": "4c2b2d2608c4f0c22042371ac8407061",
+    "semantic_hash": "4c2b2d2608c4f0c22042371ac8407061"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/src/main.rs": {
+    "mtime": 1779653748.3579645,
+    "ast_hash": "744d17489cc4e580f67879b318b79029",
+    "semantic_hash": "744d17489cc4e580f67879b318b79029"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/App.tsx": {
+    "mtime": 1779813437.036999,
+    "ast_hash": "1e666d7b4226394d1d5fcfdb68f77e0e",
+    "semantic_hash": "1e666d7b4226394d1d5fcfdb68f77e0e"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/main.tsx": {
+    "mtime": 1779371060.4606225,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/orchestrator.ts": {
+    "mtime": 1779653748.3585842,
+    "ast_hash": "92cc10667a939c115424d38d061acfdb",
+    "semantic_hash": "92cc10667a939c115424d38d061acfdb"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/latexRenderer.ts": {
+    "mtime": 1779371303.9684439,
+    "ast_hash": "7943646038b4d77d71f243b13bf9561f",
+    "semantic_hash": "7943646038b4d77d71f243b13bf9561f"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/db.ts": {
+    "mtime": 1779378394.3844988,
+    "ast_hash": "99969181edd9bcc66875f9d51da0325b",
+    "semantic_hash": "99969181edd9bcc66875f9d51da0325b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/scraper.ts": {
+    "mtime": 1779371297.4328928,
+    "ast_hash": "2933bd374df1a563a1869f95c647ede5",
+    "semantic_hash": "2933bd374df1a563a1869f95c647ede5"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/index.html": {
+    "mtime": 1779653748.3459797,
+    "ast_hash": "bcff73f8f163504c5cf30e0b9e0b41f6",
+    "semantic_hash": "bcff73f8f163504c5cf30e0b9e0b41f6"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/README.md": {
+    "mtime": 1779653748.345817,
+    "ast_hash": "ec4cc23e5c50c94f75347b405cc31a5c",
+    "semantic_hash": "ec4cc23e5c50c94f75347b405cc31a5c"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/public/icons.svg": {
+    "mtime": 1779371060.459584,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/public/favicon.svg": {
+    "mtime": 1779371060.4593863,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": "7e840862161341271697daa99a40d76b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/32x32@2x.png": {
+    "mtime": 1779812493.1185973,
+    "ast_hash": "0429f4be670bc322608625e23141dfb3",
+    "semantic_hash": "0429f4be670bc322608625e23141dfb3"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/StoreLogo.png": {
+    "mtime": 1779812551.9851408,
+    "ast_hash": "385f02b16df6f2bc7e229a76c901f86f",
+    "semantic_hash": "385f02b16df6f2bc7e229a76c901f86f"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/256x256@2x.png": {
+    "mtime": 1779812493.1511908,
+    "ast_hash": "064e852053c93541c8b4fc9c3022c7d4",
+    "semantic_hash": "064e852053c93541c8b4fc9c3022c7d4"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/40x40@2x.png": {
+    "mtime": 1779812541.610914,
+    "ast_hash": "4ffea31459a819d7efb4b5a3e3599b71",
+    "semantic_hash": "4ffea31459a819d7efb4b5a3e3599b71"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/256x256.png": {
+    "mtime": 1779812493.1277175,
+    "ast_hash": "ac6f0d2bed3dc648e529c8b27744ef66",
+    "semantic_hash": "ac6f0d2bed3dc648e529c8b27744ef66"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/128x128.png": {
+    "mtime": 1779812493.1218002,
+    "ast_hash": "4410b80f40ed126f120412f5d80e4f88",
+    "semantic_hash": "4410b80f40ed126f120412f5d80e4f88"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/32x32.png": {
+    "mtime": 1779812493.114786,
+    "ast_hash": "076053fd85d3ffb87ffd183d24f22c6f",
+    "semantic_hash": "076053fd85d3ffb87ffd183d24f22c6f"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/512x512.png": {
+    "mtime": 1779812493.1543176,
+    "ast_hash": "064e852053c93541c8b4fc9c3022c7d4",
+    "semantic_hash": "064e852053c93541c8b4fc9c3022c7d4"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/128x128@2x.png": {
+    "mtime": 1779812493.1242893,
+    "ast_hash": "ac6f0d2bed3dc648e529c8b27744ef66",
+    "semantic_hash": "ac6f0d2bed3dc648e529c8b27744ef66"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src-tauri/icons/512x512@2x.png": {
+    "mtime": 1779812493.1575332,
+    "ast_hash": "4475a91195d20a38bae2bb0317f464cb",
+    "semantic_hash": "4475a91195d20a38bae2bb0317f464cb"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/assets/hero.png": {
+    "mtime": 1779371060.4601128,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/assets/vite.svg": {
+    "mtime": 1779371060.4603477,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": "9960a24288958394ac50e57ff638b036"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/assets/react.svg": {
+    "mtime": 1779371060.4602468,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/assets/cv-fix-logo-rect.png": {
+    "mtime": 1779812025.3796558,
+    "ast_hash": "711e9125d374204535695f1f89cc3c75",
+    "semantic_hash": "711e9125d374204535695f1f89cc3c75"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/assets/cv-fix-logo.png": {
+    "mtime": 1779812025.3816683,
+    "ast_hash": "5ab8d95b4eabae6ab07a790b27e613c8",
+    "semantic_hash": "5ab8d95b4eabae6ab07a790b27e613c8"
+  }
+}
