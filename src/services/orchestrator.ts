@@ -1,25 +1,4 @@
-export interface DimensionScore {
-  name: string;
-  score: number;
-  feedback: string;
-}
-
-export interface OptimizationResponse {
-  evaluation: {
-    roleSummary: string;
-    cvMatch: string;
-    levelStrategy: string;
-    compResearch: string;
-    personalizationBlueprint: string;
-    interviewSTAR: string;
-  };
-  scorecard: {
-    overallGrade: string;
-    overallScore: number;
-    dimensions: DimensionScore[];
-  };
-  optimizedTex: string;
-}
+import type { OptimizationResponse, DimensionScore } from '../types';
 
 // System prompts based on the Santifer CV-Fix pipeline
 const SYSTEM_PROMPT = `You are CV-Fix, an expert Principal Technical Resume Architect and Senior Recruiter. 
@@ -360,7 +339,7 @@ async function callLocalCli(masterTex: string, jobDesc: string, userTweak: strin
       return await invoke<string>('run_gemini_cli', { prompt: fullPrompt });
     } catch (err) {
       console.error('Tauri native run_gemini_cli command failed:', err);
-      throw new Error(`Tauri native execution failed: ${err}`);
+      throw new Error(`Tauri native execution failed: ${err}`, { cause: err });
     }
   }
 

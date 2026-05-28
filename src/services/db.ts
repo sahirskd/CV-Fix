@@ -1,31 +1,6 @@
 import { get, set, del } from 'idb-keyval';
 
-export interface OptimizationRecord {
-  id: string;
-  timestamp: number;
-  jobTitle: string;
-  companyName: string;
-  jobUrl?: string;
-  originalTex: string;
-  optimizedTex: string;
-  evaluation: {
-    roleSummary: string;
-    cvMatch: string;
-    levelStrategy: string;
-    compResearch: string;
-    personalizationBlueprint: string;
-    interviewSTAR: string;
-  };
-  scorecard: {
-    overallGrade: string;
-    overallScore: number;
-    dimensions: {
-      name: string;
-      score: number; // 0-100
-      feedback: string;
-    }[];
-  };
-}
+import type { OptimizationRecord } from '../types';
 
 export const StorageKeys = {
   MASTER_LATEX: 'career_ops_master_latex',
