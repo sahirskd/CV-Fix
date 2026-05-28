@@ -1,98 +1,96 @@
-# Graph Report - .  (2026-05-27)
+# Graph Report - .  (2026-05-28)
 
 ## Corpus Check
-- 40 files · ~55,941 words
+- 72 files · ~64,433 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 626 nodes · 812 edges · 88 communities (87 shown, 1 thin omitted)
+- 653 nodes · 881 edges · 86 communities (85 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Schemas Acl Manifests Allow From Bytes Commands|Schemas Acl Manifests Allow From Bytes Commands]]
-- [[_COMMUNITY_Services Db Addhistoryrecord|Services Db Addhistoryrecord]]
-- [[_COMMUNITY_Cv Fix Package Dependencies|Cv Fix Package Dependencies]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Emit Commands|Schemas Acl Manifests Allow Emit Commands]]
-- [[_COMMUNITY_Src Tauri Tauri Conf Android Debugapplicationidsuffix|Src Tauri Tauri Conf Android Debugapplicationidsuffix]]
-- [[_COMMUNITY_Cv Fix Tsconfig App Compileroptions|Cv Fix Tsconfig App Compileroptions]]
-- [[_COMMUNITY_Cv Fix Tsconfig Node Compileroptions|Cv Fix Tsconfig Node Compileroptions]]
-- [[_COMMUNITY_Schemas Acl Manifests Core|Schemas Acl Manifests Core]]
-- [[_COMMUNITY_Schemas Desktop Schema Definitions|Schemas Desktop Schema Definitions]]
-- [[_COMMUNITY_Schemas Macos Schema Definitions|Schemas Macos Schema Definitions]]
-- [[_COMMUNITY_Schemas Desktop Schema Capability Description|Schemas Desktop Schema Capability Description]]
-- [[_COMMUNITY_Schemas Macos Schema Capability Description|Schemas Macos Schema Capability Description]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow App Show Commands|Schemas Acl Manifests Allow App Show Commands]]
-- [[_COMMUNITY_Schemas Desktop Schema Items Ref|Schemas Desktop Schema Items Ref]]
-- [[_COMMUNITY_Schemas Desktop Schema Items Type|Schemas Desktop Schema Items Type]]
-- [[_COMMUNITY_Schemas Macos Schema Items Ref|Schemas Macos Schema Items Ref]]
-- [[_COMMUNITY_Schemas Macos Schema Items Type|Schemas Macos Schema Items Type]]
-- [[_COMMUNITY_Schemas Acl Manifests Core App|Schemas Acl Manifests Core App]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Append Description|Schemas Acl Manifests Allow Append Description]]
-- [[_COMMUNITY_Schemas Desktop Schema Capabilityremote Description|Schemas Desktop Schema Capabilityremote Description]]
-- [[_COMMUNITY_Schemas Macos Schema Capabilityremote Description|Schemas Macos Schema Capabilityremote Description]]
-- [[_COMMUNITY_Schemas Capabilities Default|Schemas Capabilities Default]]
-- [[_COMMUNITY_Capabilities Default Description|Capabilities Default Description]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow App Hide Commands|Schemas Acl Manifests Allow App Hide Commands]]
-- [[_COMMUNITY_Schemas Desktop Schema Anyof|Schemas Desktop Schema Anyof]]
-- [[_COMMUNITY_Schemas Macos Schema Anyof|Schemas Macos Schema Anyof]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Bundle Type Commands|Schemas Acl Manifests Allow Bundle Type Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Fetch Data Store Identifiers Commands|Schemas Acl Manifests Allow Fetch Data Store Identifiers Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Identifier Commands|Schemas Acl Manifests Allow Identifier Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Name Commands|Schemas Acl Manifests Allow Name Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Register Listener Commands|Schemas Acl Manifests Allow Register Listener Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Remove Data Store Commands|Schemas Acl Manifests Allow Remove Data Store Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Remove Listener Commands|Schemas Acl Manifests Allow Remove Listener Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set App Theme Commands|Schemas Acl Manifests Allow Set App Theme Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Tauri Version Commands|Schemas Acl Manifests Allow Tauri Version Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Default Window Icon Commands|Schemas Acl Manifests Deny Default Window Icon Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Register Listener Commands|Schemas Acl Manifests Deny Register Listener Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Remove Listener Commands|Schemas Acl Manifests Deny Remove Listener Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Tauri Version Commands|Schemas Acl Manifests Deny Tauri Version Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Default Window Icon Commands|Schemas Acl Manifests Allow Default Window Icon Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Dock Visibility Commands|Schemas Acl Manifests Allow Set Dock Visibility Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Supports Multiple Windows Commands|Schemas Acl Manifests Allow Supports Multiple Windows Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Version Commands|Schemas Acl Manifests Allow Version Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny App Hide Commands|Schemas Acl Manifests Deny App Hide Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny App Show Commands|Schemas Acl Manifests Deny App Show Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Bundle Type Commands|Schemas Acl Manifests Deny Bundle Type Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Fetch Data Store Identifiers Commands|Schemas Acl Manifests Deny Fetch Data Store Identifiers Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Name Commands|Schemas Acl Manifests Deny Name Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Remove Data Store Commands|Schemas Acl Manifests Deny Remove Data Store Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Set App Theme Commands|Schemas Acl Manifests Deny Set App Theme Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Set Dock Visibility Commands|Schemas Acl Manifests Deny Set Dock Visibility Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Supports Multiple Windows Commands|Schemas Acl Manifests Deny Supports Multiple Windows Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Version Commands|Schemas Acl Manifests Deny Version Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Get Commands|Schemas Acl Manifests Allow Get Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Insert Commands|Schemas Acl Manifests Allow Insert Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Is Enabled Commands|Schemas Acl Manifests Allow Is Enabled Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Popup Commands|Schemas Acl Manifests Allow Popup Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Prepend Commands|Schemas Acl Manifests Allow Prepend Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Checked Commands|Schemas Acl Manifests Allow Set Checked Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Enabled Commands|Schemas Acl Manifests Allow Set Enabled Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Create Default Commands|Schemas Acl Manifests Deny Create Default Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Items Commands|Schemas Acl Manifests Deny Items Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Create Default Commands|Schemas Acl Manifests Allow Create Default Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Is Checked Commands|Schemas Acl Manifests Allow Is Checked Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Items Commands|Schemas Acl Manifests Allow Items Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Remove Commands|Schemas Acl Manifests Allow Remove Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Remove At Commands|Schemas Acl Manifests Allow Remove At Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Accelerator Commands|Schemas Acl Manifests Allow Set Accelerator Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set As App Menu Commands|Schemas Acl Manifests Allow Set As App Menu Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set As Window Menu Commands|Schemas Acl Manifests Allow Set As Window Menu Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands|Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Icon Commands|Schemas Acl Manifests Allow Set Icon Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Set Text Commands|Schemas Acl Manifests Allow Set Text Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Allow Text Commands|Schemas Acl Manifests Allow Text Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Get Commands|Schemas Acl Manifests Deny Get Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Insert Commands|Schemas Acl Manifests Deny Insert Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Is Checked Commands|Schemas Acl Manifests Deny Is Checked Commands]]
-- [[_COMMUNITY_Schemas Acl Manifests Deny Is Enabled Commands|Schemas Acl Manifests Deny Is Enabled Commands]]
-- [[_COMMUNITY_Schemas Desktop Schema Local Default|Schemas Desktop Schema Local Default]]
-- [[_COMMUNITY_Schemas Desktop Schema Description Default|Schemas Desktop Schema Description Default]]
-- [[_COMMUNITY_Schemas Macos Schema Local Default|Schemas Macos Schema Local Default]]
-- [[_COMMUNITY_Schemas Macos Schema Description Default|Schemas Macos Schema Description Default]]
-- [[_COMMUNITY_Cv Fix Tsconfig Files|Cv Fix Tsconfig Files]]
+- [[_COMMUNITY_Tauri ACL Manifests|Tauri ACL Manifests]]
+- [[_COMMUNITY_React App Architecture|React App Architecture]]
+- [[_COMMUNITY_NPM Dependencies|NPM Dependencies]]
+- [[_COMMUNITY_Tauri ACL Commands|Tauri ACL Commands]]
+- [[_COMMUNITY_Database & Services|Database & Services]]
+- [[_COMMUNITY_Tauri Configuration|Tauri Configuration]]
+- [[_COMMUNITY_TypeScript App Config|TypeScript App Config]]
+- [[_COMMUNITY_TypeScript Node Config|TypeScript Node Config]]
+- [[_COMMUNITY_Tauri Core Permissions|Tauri Core Permissions]]
+- [[_COMMUNITY_Tauri ACL Deny Rules|Tauri ACL Deny Rules]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 81|Community 81]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `allow` - 76 edges
@@ -100,343 +98,343 @@
 3. `permissions` - 31 edges
 4. `permissions` - 30 edges
 5. `compilerOptions` - 17 edges
-6. `compilerOptions` - 16 edges
-7. `permissions` - 11 edges
-8. `permissions` - 9 edges
-9. `definitions` - 8 edges
+6. `useAppContext()` - 17 edges
+7. `compilerOptions` - 16 edges
+8. `permissions` - 11 edges
+9. `permissions` - 9 edges
 10. `definitions` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `App()` --calls--> `parseLatexToHtml()`  [EXTRACTED]
-  src/App.tsx → src/services/latexRenderer.ts
+- `MobileTabs()` --calls--> `useAppContext()`  [EXTRACTED]
+  src/components/layout/MobileTabs.tsx → src/context/AppContext.tsx
+- `Header()` --calls--> `useAppContext()`  [EXTRACTED]
+  src/components/layout/Header.tsx → src/context/AppContext.tsx
+- `SettingsModal()` --calls--> `useAppContext()`  [EXTRACTED]
+  src/components/modals/SettingsModal.tsx → src/context/AppContext.tsx
+- `MatchDashboard()` --calls--> `useAppContext()`  [EXTRACTED]
+  src/components/job/MatchDashboard.tsx → src/context/AppContext.tsx
+- `JobIngestionCard()` --calls--> `useAppContext()`  [EXTRACTED]
+  src/components/job/JobIngestionCard.tsx → src/context/AppContext.tsx
 
-## Communities (88 total, 1 thin omitted)
+## Communities (86 total, 1 thin omitted)
 
-### Community 0 - "Schemas Acl Manifests Allow From Bytes Commands"
+### Community 0 - "Tauri ACL Manifests"
 Cohesion: 0.05
-Nodes (41): commands, description, identifier, commands, description, identifier, commands, description (+33 more)
+Nodes (44): commands, description, identifier, commands, description, identifier, commands, description (+36 more)
 
-### Community 1 - "Services Db Addhistoryrecord"
-Cohesion: 0.10
-Nodes (31): addHistoryRecord(), getApiKey(), getHistory(), getMasterLatex(), getPromptTweak(), getSelectedModel(), OptimizationRecord, saveApiKey() (+23 more)
+### Community 1 - "React App Architecture"
+Cohesion: 0.11
+Nodes (23): AppContext, AppProvider(), useAppContext(), MasterCVEditor(), WorkspacePreview(), useAppSettings(), useLayoutResize(), useTheme() (+15 more)
 
-### Community 2 - "Cv Fix Package Dependencies"
+### Community 2 - "NPM Dependencies"
 Cohesion: 0.05
 Nodes (36): dependencies, @anthropic-ai/sdk, @google/generative-ai, idb-keyval, lucide-react, @monaco-editor/react, react, react-dom (+28 more)
 
-### Community 3 - "Schemas Acl Manifests Allow Emit Commands"
+### Community 3 - "Tauri ACL Commands"
 Cohesion: 0.06
-Nodes (36): commands, description, identifier, commands, description, identifier, commands, description (+28 more)
+Nodes (33): commands, description, identifier, commands, description, identifier, commands, description (+25 more)
 
-### Community 4 - "Src Tauri Tauri Conf Android Debugapplicationidsuffix"
+### Community 4 - "Database & Services"
+Cohesion: 0.14
+Nodes (22): AppContextType, addHistoryRecord(), getApiKey(), getHistory(), getMasterLatex(), getPromptTweak(), getSelectedModel(), saveApiKey() (+14 more)
+
+### Community 5 - "Tauri Configuration"
 Cohesion: 0.10
 Nodes (19): debugApplicationIdSuffix, app, security, windows, build, beforeBuildCommand, beforeDevCommand, devUrl (+11 more)
 
-### Community 5 - "Cv Fix Tsconfig App Compileroptions"
+### Community 6 - "TypeScript App Config"
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection, moduleResolution (+10 more)
 
-### Community 6 - "Cv Fix Tsconfig Node Compileroptions"
+### Community 7 - "TypeScript Node Config"
 Cohesion: 0.11
 Nodes (17): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection, moduleResolution, noEmit (+9 more)
 
-### Community 7 - "Schemas Acl Manifests Core"
+### Community 8 - "Tauri Core Permissions"
 Cohesion: 0.19
-Nodes (16): core, default_permission, default_permission, default_permission, global_scope_schema, core:image, default_permission, global_scope_schema (+8 more)
+Nodes (16): core, default_permission, default_permission, core:event, default_permission, global_scope_schema, permission_sets, global_scope_schema (+8 more)
 
-### Community 8 - "Schemas Desktop Schema Definitions"
+### Community 9 - "Tauri ACL Deny Rules"
+Cohesion: 0.10
+Nodes (16): commands, description, identifier, commands, description, identifier, commands, description (+8 more)
+
+### Community 10 - "Community 10"
 Cohesion: 0.13
 Nodes (15): definitions, Identifier, Number, PermissionEntry, Target, Value, oneOf, anyOf (+7 more)
 
-### Community 9 - "Schemas Macos Schema Definitions"
-Cohesion: 0.13
-Nodes (15): definitions, Identifier, Number, PermissionEntry, Target, Value, oneOf, anyOf (+7 more)
+### Community 11 - "Community 11"
+Cohesion: 0.15
+Nodes (13): definitions, Number, PermissionEntry, Target, Value, anyOf, description, anyOf (+5 more)
 
-### Community 10 - "Schemas Desktop Schema Capability Description"
+### Community 12 - "Community 12"
 Cohesion: 0.18
 Nodes (11): description, properties, required, type, Capability, description, type, identifier (+3 more)
 
-### Community 11 - "Schemas Macos Schema Capability Description"
-Cohesion: 0.18
-Nodes (11): description, properties, required, type, Capability, description, type, identifier (+3 more)
-
-### Community 12 - "Schemas Acl Manifests Allow App Show Commands"
-Cohesion: 0.20
-Nodes (10): commands, description, identifier, commands, allow, commands, description, identifier (+2 more)
-
-### Community 13 - "Schemas Desktop Schema Items Ref"
+### Community 13 - "Community 13"
 Cohesion: 0.20
 Nodes (10): $ref, description, items, type, uniqueItems, description, items, type (+2 more)
 
-### Community 14 - "Schemas Desktop Schema Items Type"
+### Community 14 - "Community 14"
 Cohesion: 0.20
 Nodes (10): type, webviews, windows, items, description, items, type, description (+2 more)
 
-### Community 15 - "Schemas Macos Schema Items Ref"
+### Community 15 - "Community 15"
 Cohesion: 0.20
 Nodes (10): $ref, description, items, type, uniqueItems, description, items, type (+2 more)
 
-### Community 16 - "Schemas Macos Schema Items Type"
+### Community 16 - "Community 16"
 Cohesion: 0.20
 Nodes (10): type, webviews, windows, items, description, items, type, description (+2 more)
 
-### Community 17 - "Schemas Acl Manifests Core App"
-Cohesion: 0.25
-Nodes (8): core:app, global_scope_schema, permission_sets, permissions, commands, description, identifier, deny-identifier
+### Community 17 - "Community 17"
+Cohesion: 0.22
+Nodes (9): commands, description, identifier, allow, commands, description, identifier, allow-app-show (+1 more)
 
-### Community 18 - "Schemas Acl Manifests Allow Append Description"
-Cohesion: 0.25
-Nodes (8): description, identifier, commands, description, identifier, permissions, allow-append, allow-set-as-help-menu-for-nsapp
+### Community 18 - "Community 18"
+Cohesion: 0.22
+Nodes (9): commands, description, identifier, deny, commands, description, identifier, allow-app-hide (+1 more)
 
-### Community 19 - "Schemas Desktop Schema Capabilityremote Description"
+### Community 19 - "Community 19"
+Cohesion: 0.22
+Nodes (9): properties, Identifier, description, oneOf, type, identifier, remote, anyOf (+1 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.21
+Nodes (8): commands, description, identifier, commands, description, identifier, allow-popup, allow-set-as-help-menu-for-nsapp
+
+### Community 21 - "Community 21"
+Cohesion: 0.25
+Nodes (8): core:app, global_scope_schema, permission_sets, permissions, commands, description, identifier, deny-register-listener
+
+### Community 22 - "Community 22"
 Cohesion: 0.25
 Nodes (8): description, properties, required, type, CapabilityRemote, urls, description, type
 
-### Community 20 - "Schemas Macos Schema Capabilityremote Description"
+### Community 23 - "Community 23"
 Cohesion: 0.25
 Nodes (8): description, properties, required, type, CapabilityRemote, urls, description, type
 
-### Community 21 - "Schemas Capabilities Default"
+### Community 24 - "Community 24"
 Cohesion: 0.29
 Nodes (6): default, description, identifier, local, permissions, windows
 
-### Community 22 - "Capabilities Default Description"
+### Community 25 - "Community 25"
 Cohesion: 0.33
 Nodes (5): description, identifier, permissions, $schema, windows
 
-### Community 23 - "Schemas Acl Manifests Allow App Hide Commands"
+### Community 26 - "Community 26"
 Cohesion: 0.40
-Nodes (5): commands, description, identifier, deny, allow-app-hide
+Nodes (5): commands, description, identifier, permissions, allow-is-checked
 
-### Community 24 - "Schemas Desktop Schema Anyof"
-Cohesion: 0.40
-Nodes (4): anyOf, description, $schema, title
-
-### Community 25 - "Schemas Macos Schema Anyof"
+### Community 27 - "Community 27"
 Cohesion: 0.40
 Nodes (4): anyOf, description, $schema, title
 
-### Community 26 - "Schemas Acl Manifests Allow Bundle Type Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-bundle-type
+### Community 28 - "Community 28"
+Cohesion: 0.40
+Nodes (4): anyOf, description, $schema, title
 
-### Community 27 - "Schemas Acl Manifests Allow Fetch Data Store Identifiers Commands"
+### Community 29 - "Community 29"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-fetch-data-store-identifiers
 
-### Community 28 - "Schemas Acl Manifests Allow Identifier Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-identifier
-
-### Community 29 - "Schemas Acl Manifests Allow Name Commands"
+### Community 30 - "Community 30"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-name
 
-### Community 30 - "Schemas Acl Manifests Allow Register Listener Commands"
+### Community 31 - "Community 31"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-register-listener
 
-### Community 31 - "Schemas Acl Manifests Allow Remove Data Store Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-remove-data-store
-
-### Community 32 - "Schemas Acl Manifests Allow Remove Listener Commands"
+### Community 32 - "Community 32"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-remove-listener
 
-### Community 33 - "Schemas Acl Manifests Allow Set App Theme Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-app-theme
-
-### Community 34 - "Schemas Acl Manifests Allow Tauri Version Commands"
+### Community 33 - "Community 33"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-tauri-version
 
-### Community 35 - "Schemas Acl Manifests Deny Default Window Icon Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-default-window-icon
-
-### Community 36 - "Schemas Acl Manifests Deny Register Listener Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-register-listener
-
-### Community 37 - "Schemas Acl Manifests Deny Remove Listener Commands"
+### Community 34 - "Community 34"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, deny-remove-listener
 
-### Community 38 - "Schemas Acl Manifests Deny Tauri Version Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-tauri-version
-
-### Community 39 - "Schemas Acl Manifests Allow Default Window Icon Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-default-window-icon
-
-### Community 40 - "Schemas Acl Manifests Allow Set Dock Visibility Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-dock-visibility
-
-### Community 41 - "Schemas Acl Manifests Allow Supports Multiple Windows Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-supports-multiple-windows
-
-### Community 42 - "Schemas Acl Manifests Allow Version Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-version
-
-### Community 43 - "Schemas Acl Manifests Deny App Hide Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-app-hide
-
-### Community 44 - "Schemas Acl Manifests Deny App Show Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-app-show
-
-### Community 45 - "Schemas Acl Manifests Deny Bundle Type Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-bundle-type
-
-### Community 46 - "Schemas Acl Manifests Deny Fetch Data Store Identifiers Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-fetch-data-store-identifiers
-
-### Community 47 - "Schemas Acl Manifests Deny Name Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-name
-
-### Community 48 - "Schemas Acl Manifests Deny Remove Data Store Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-remove-data-store
-
-### Community 49 - "Schemas Acl Manifests Deny Set App Theme Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-set-app-theme
-
-### Community 50 - "Schemas Acl Manifests Deny Set Dock Visibility Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-set-dock-visibility
-
-### Community 51 - "Schemas Acl Manifests Deny Supports Multiple Windows Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-supports-multiple-windows
-
-### Community 52 - "Schemas Acl Manifests Deny Version Commands"
+### Community 35 - "Community 35"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, deny-version
 
-### Community 53 - "Schemas Acl Manifests Allow Get Commands"
+### Community 36 - "Community 36"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-get
+Nodes (4): commands, description, identifier, allow-bundle-type
 
-### Community 54 - "Schemas Acl Manifests Allow Insert Commands"
+### Community 37 - "Community 37"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-insert
+Nodes (4): commands, description, identifier, allow-default-window-icon
 
-### Community 55 - "Schemas Acl Manifests Allow Is Enabled Commands"
+### Community 38 - "Community 38"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-is-enabled
+Nodes (4): commands, description, identifier, allow-identifier
 
-### Community 56 - "Schemas Acl Manifests Allow Popup Commands"
+### Community 39 - "Community 39"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-popup
+Nodes (4): commands, description, identifier, allow-remove-data-store
 
-### Community 57 - "Schemas Acl Manifests Allow Prepend Commands"
+### Community 40 - "Community 40"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-prepend
+Nodes (4): commands, description, identifier, allow-set-app-theme
 
-### Community 58 - "Schemas Acl Manifests Allow Set Checked Commands"
+### Community 41 - "Community 41"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-checked
+Nodes (4): commands, description, identifier, allow-set-dock-visibility
 
-### Community 59 - "Schemas Acl Manifests Allow Set Enabled Commands"
+### Community 42 - "Community 42"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-enabled
+Nodes (4): commands, description, identifier, allow-supports-multiple-windows
 
-### Community 60 - "Schemas Acl Manifests Deny Create Default Commands"
+### Community 43 - "Community 43"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-create-default
+Nodes (4): commands, description, identifier, allow-version
 
-### Community 61 - "Schemas Acl Manifests Deny Items Commands"
+### Community 44 - "Community 44"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-items
+Nodes (4): commands, description, identifier, deny-app-hide
 
-### Community 62 - "Schemas Acl Manifests Allow Create Default Commands"
+### Community 45 - "Community 45"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-app-show
+
+### Community 46 - "Community 46"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-bundle-type
+
+### Community 47 - "Community 47"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-default-window-icon
+
+### Community 48 - "Community 48"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-identifier
+
+### Community 49 - "Community 49"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-name
+
+### Community 50 - "Community 50"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-remove-data-store
+
+### Community 51 - "Community 51"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-set-app-theme
+
+### Community 52 - "Community 52"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-set-dock-visibility
+
+### Community 53 - "Community 53"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-supports-multiple-windows
+
+### Community 54 - "Community 54"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-create-default
 
-### Community 63 - "Schemas Acl Manifests Allow Is Checked Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-is-checked
-
-### Community 64 - "Schemas Acl Manifests Allow Items Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-items
-
-### Community 65 - "Schemas Acl Manifests Allow Remove Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-remove
-
-### Community 66 - "Schemas Acl Manifests Allow Remove At Commands"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-remove-at
-
-### Community 67 - "Schemas Acl Manifests Allow Set Accelerator Commands"
+### Community 55 - "Community 55"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-accelerator
 
-### Community 68 - "Schemas Acl Manifests Allow Set As App Menu Commands"
+### Community 56 - "Community 56"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-append
+
+### Community 57 - "Community 57"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-get
+
+### Community 58 - "Community 58"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-insert
+
+### Community 59 - "Community 59"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-items
+
+### Community 60 - "Community 60"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-prepend
+
+### Community 61 - "Community 61"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-remove
+
+### Community 62 - "Community 62"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-remove-at
+
+### Community 63 - "Community 63"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-as-app-menu
 
-### Community 69 - "Schemas Acl Manifests Allow Set As Window Menu Commands"
+### Community 64 - "Community 64"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-as-window-menu
 
-### Community 70 - "Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands"
+### Community 65 - "Community 65"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-as-windows-menu-for-nsapp
 
-### Community 71 - "Schemas Acl Manifests Allow Set Icon Commands"
+### Community 66 - "Community 66"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-set-checked
+
+### Community 67 - "Community 67"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-set-enabled
+
+### Community 68 - "Community 68"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-icon
 
-### Community 72 - "Schemas Acl Manifests Allow Set Text Commands"
+### Community 69 - "Community 69"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-text
 
-### Community 73 - "Schemas Acl Manifests Allow Text Commands"
+### Community 70 - "Community 70"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-text
 
-### Community 74 - "Schemas Acl Manifests Deny Get Commands"
+### Community 71 - "Community 71"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-get
+Nodes (4): commands, description, identifier, deny-append
 
-### Community 75 - "Schemas Acl Manifests Deny Insert Commands"
+### Community 72 - "Community 72"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, deny-insert
 
-### Community 76 - "Schemas Acl Manifests Deny Is Checked Commands"
+### Community 73 - "Community 73"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, deny-is-checked
 
-### Community 77 - "Schemas Acl Manifests Deny Is Enabled Commands"
+### Community 74 - "Community 74"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-is-enabled
+Nodes (4): commands, description, identifier, deny-items
 
-### Community 78 - "Schemas Desktop Schema Local Default"
+### Community 75 - "Community 75"
+Cohesion: 0.50
+Nodes (4): description, required, type, Capability
+
+### Community 76 - "Community 76"
 Cohesion: 0.50
 Nodes (4): default, description, type, local
 
-### Community 79 - "Schemas Desktop Schema Description Default"
+### Community 77 - "Community 77"
 Cohesion: 0.50
 Nodes (4): default, description, type, description
 
-### Community 80 - "Schemas Macos Schema Local Default"
+### Community 78 - "Community 78"
 Cohesion: 0.50
 Nodes (4): default, description, type, local
 
-### Community 81 - "Schemas Macos Schema Description Default"
+### Community 79 - "Community 79"
 Cohesion: 0.50
 Nodes (4): default, description, type, description
 
@@ -448,17 +446,17 @@ Nodes (4): default, description, type, description
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `allow` connect `Schemas Acl Manifests Allow App Show Commands` to `Schemas Acl Manifests Allow From Bytes Commands`, `Schemas Acl Manifests Allow Emit Commands`, `Schemas Acl Manifests Core App`, `Schemas Acl Manifests Allow Append Description`, `Schemas Acl Manifests Allow App Hide Commands`, `Schemas Acl Manifests Allow Bundle Type Commands`, `Schemas Acl Manifests Allow Fetch Data Store Identifiers Commands`, `Schemas Acl Manifests Allow Identifier Commands`, `Schemas Acl Manifests Allow Name Commands`, `Schemas Acl Manifests Allow Register Listener Commands`, `Schemas Acl Manifests Allow Remove Data Store Commands`, `Schemas Acl Manifests Allow Remove Listener Commands`, `Schemas Acl Manifests Allow Set App Theme Commands`, `Schemas Acl Manifests Allow Tauri Version Commands`, `Schemas Acl Manifests Deny Default Window Icon Commands`, `Schemas Acl Manifests Deny Register Listener Commands`, `Schemas Acl Manifests Deny Remove Listener Commands`, `Schemas Acl Manifests Deny Tauri Version Commands`, `Schemas Acl Manifests Allow Default Window Icon Commands`, `Schemas Acl Manifests Allow Set Dock Visibility Commands`, `Schemas Acl Manifests Allow Supports Multiple Windows Commands`, `Schemas Acl Manifests Allow Version Commands`, `Schemas Acl Manifests Deny App Hide Commands`, `Schemas Acl Manifests Deny App Show Commands`, `Schemas Acl Manifests Deny Bundle Type Commands`, `Schemas Acl Manifests Deny Fetch Data Store Identifiers Commands`, `Schemas Acl Manifests Deny Name Commands`, `Schemas Acl Manifests Deny Remove Data Store Commands`, `Schemas Acl Manifests Deny Set App Theme Commands`, `Schemas Acl Manifests Deny Set Dock Visibility Commands`, `Schemas Acl Manifests Deny Supports Multiple Windows Commands`, `Schemas Acl Manifests Deny Version Commands`, `Schemas Acl Manifests Allow Get Commands`, `Schemas Acl Manifests Allow Insert Commands`, `Schemas Acl Manifests Allow Is Enabled Commands`, `Schemas Acl Manifests Allow Popup Commands`, `Schemas Acl Manifests Allow Prepend Commands`, `Schemas Acl Manifests Allow Set Checked Commands`, `Schemas Acl Manifests Allow Set Enabled Commands`, `Schemas Acl Manifests Deny Create Default Commands`, `Schemas Acl Manifests Deny Items Commands`, `Schemas Acl Manifests Allow Create Default Commands`, `Schemas Acl Manifests Allow Is Checked Commands`, `Schemas Acl Manifests Allow Items Commands`, `Schemas Acl Manifests Allow Remove Commands`, `Schemas Acl Manifests Allow Remove At Commands`, `Schemas Acl Manifests Allow Set Accelerator Commands`, `Schemas Acl Manifests Allow Set As App Menu Commands`, `Schemas Acl Manifests Allow Set As Window Menu Commands`, `Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands`, `Schemas Acl Manifests Allow Set Icon Commands`, `Schemas Acl Manifests Allow Set Text Commands`, `Schemas Acl Manifests Allow Text Commands`, `Schemas Acl Manifests Deny Get Commands`, `Schemas Acl Manifests Deny Insert Commands`, `Schemas Acl Manifests Deny Is Checked Commands`, `Schemas Acl Manifests Deny Is Enabled Commands`?**
-  _High betweenness centrality (0.093) - this node is a cross-community bridge._
-- **Why does `deny` connect `Schemas Acl Manifests Allow App Hide Commands` to `Schemas Acl Manifests Allow From Bytes Commands`, `Schemas Acl Manifests Allow Emit Commands`, `Schemas Acl Manifests Allow App Show Commands`, `Schemas Acl Manifests Core App`, `Schemas Acl Manifests Allow Append Description`, `Schemas Acl Manifests Allow Bundle Type Commands`, `Schemas Acl Manifests Allow Fetch Data Store Identifiers Commands`, `Schemas Acl Manifests Allow Identifier Commands`, `Schemas Acl Manifests Allow Name Commands`, `Schemas Acl Manifests Allow Register Listener Commands`, `Schemas Acl Manifests Allow Remove Data Store Commands`, `Schemas Acl Manifests Allow Remove Listener Commands`, `Schemas Acl Manifests Allow Set App Theme Commands`, `Schemas Acl Manifests Allow Tauri Version Commands`, `Schemas Acl Manifests Deny Default Window Icon Commands`, `Schemas Acl Manifests Deny Register Listener Commands`, `Schemas Acl Manifests Deny Remove Listener Commands`, `Schemas Acl Manifests Deny Tauri Version Commands`, `Schemas Acl Manifests Allow Default Window Icon Commands`, `Schemas Acl Manifests Allow Set Dock Visibility Commands`, `Schemas Acl Manifests Allow Supports Multiple Windows Commands`, `Schemas Acl Manifests Allow Version Commands`, `Schemas Acl Manifests Deny App Hide Commands`, `Schemas Acl Manifests Deny App Show Commands`, `Schemas Acl Manifests Deny Bundle Type Commands`, `Schemas Acl Manifests Deny Fetch Data Store Identifiers Commands`, `Schemas Acl Manifests Deny Name Commands`, `Schemas Acl Manifests Deny Remove Data Store Commands`, `Schemas Acl Manifests Deny Set App Theme Commands`, `Schemas Acl Manifests Deny Set Dock Visibility Commands`, `Schemas Acl Manifests Deny Supports Multiple Windows Commands`, `Schemas Acl Manifests Deny Version Commands`, `Schemas Acl Manifests Allow Get Commands`, `Schemas Acl Manifests Allow Insert Commands`, `Schemas Acl Manifests Allow Is Enabled Commands`, `Schemas Acl Manifests Allow Popup Commands`, `Schemas Acl Manifests Allow Prepend Commands`, `Schemas Acl Manifests Allow Set Checked Commands`, `Schemas Acl Manifests Allow Set Enabled Commands`, `Schemas Acl Manifests Deny Create Default Commands`, `Schemas Acl Manifests Deny Items Commands`, `Schemas Acl Manifests Allow Create Default Commands`, `Schemas Acl Manifests Allow Is Checked Commands`, `Schemas Acl Manifests Allow Items Commands`, `Schemas Acl Manifests Allow Remove Commands`, `Schemas Acl Manifests Allow Remove At Commands`, `Schemas Acl Manifests Allow Set Accelerator Commands`, `Schemas Acl Manifests Allow Set As App Menu Commands`, `Schemas Acl Manifests Allow Set As Window Menu Commands`, `Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands`, `Schemas Acl Manifests Allow Set Icon Commands`, `Schemas Acl Manifests Allow Set Text Commands`, `Schemas Acl Manifests Allow Text Commands`, `Schemas Acl Manifests Deny Get Commands`, `Schemas Acl Manifests Deny Insert Commands`, `Schemas Acl Manifests Deny Is Checked Commands`, `Schemas Acl Manifests Deny Is Enabled Commands`?**
-  _High betweenness centrality (0.093) - this node is a cross-community bridge._
-- **Why does `permissions` connect `Schemas Acl Manifests Allow Append Description` to `Schemas Acl Manifests Allow From Bytes Commands`, `Schemas Acl Manifests Core`, `Schemas Acl Manifests Allow App Show Commands`, `Schemas Acl Manifests Allow Get Commands`, `Schemas Acl Manifests Allow Insert Commands`, `Schemas Acl Manifests Allow Is Enabled Commands`, `Schemas Acl Manifests Allow Popup Commands`, `Schemas Acl Manifests Allow Prepend Commands`, `Schemas Acl Manifests Allow Set Checked Commands`, `Schemas Acl Manifests Allow Set Enabled Commands`, `Schemas Acl Manifests Deny Create Default Commands`, `Schemas Acl Manifests Deny Items Commands`, `Schemas Acl Manifests Allow Create Default Commands`, `Schemas Acl Manifests Allow Is Checked Commands`, `Schemas Acl Manifests Allow Items Commands`, `Schemas Acl Manifests Allow Remove Commands`, `Schemas Acl Manifests Allow Remove At Commands`, `Schemas Acl Manifests Allow Set Accelerator Commands`, `Schemas Acl Manifests Allow Set As App Menu Commands`, `Schemas Acl Manifests Allow Set As Window Menu Commands`, `Schemas Acl Manifests Allow Set As Windows Menu For Nsapp Commands`, `Schemas Acl Manifests Allow Set Icon Commands`, `Schemas Acl Manifests Allow Set Text Commands`, `Schemas Acl Manifests Allow Text Commands`, `Schemas Acl Manifests Deny Get Commands`, `Schemas Acl Manifests Deny Insert Commands`, `Schemas Acl Manifests Deny Is Checked Commands`, `Schemas Acl Manifests Deny Is Enabled Commands`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `allow` connect `Community 17` to `Tauri ACL Manifests`, `Tauri ACL Commands`, `Tauri ACL Deny Rules`, `Community 18`, `Community 20`, `Community 21`, `Community 26`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 44`, `Community 45`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`?**
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
+- **Why does `deny` connect `Community 18` to `Tauri ACL Manifests`, `Tauri ACL Commands`, `Tauri ACL Deny Rules`, `Community 17`, `Community 20`, `Community 21`, `Community 26`, `Community 29`, `Community 30`, `Community 31`, `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 44`, `Community 45`, `Community 46`, `Community 47`, `Community 48`, `Community 49`, `Community 50`, `Community 51`, `Community 52`, `Community 53`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`?**
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
+- **Why does `permissions` connect `Community 26` to `Tauri ACL Manifests`, `Tauri Core Permissions`, `Tauri ACL Deny Rules`, `Community 20`, `Community 54`, `Community 55`, `Community 56`, `Community 57`, `Community 58`, `Community 59`, `Community 60`, `Community 61`, `Community 62`, `Community 63`, `Community 64`, `Community 65`, `Community 66`, `Community 67`, `Community 68`, `Community 69`, `Community 70`, `Community 71`, `Community 72`, `Community 73`, `Community 74`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **What connects `tsBuildInfoFile`, `target`, `lib` to the rest of the system?**
   _335 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Schemas Acl Manifests Allow From Bytes Commands` be split into smaller, more focused modules?**
-  _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
-- **Should `Services Db Addhistoryrecord` be split into smaller, more focused modules?**
-  _Cohesion score 0.09672830725462304 - nodes in this community are weakly interconnected._
-- **Should `Cv Fix Package Dependencies` be split into smaller, more focused modules?**
+- **Should `Tauri ACL Manifests` be split into smaller, more focused modules?**
+  _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
+- **Should `React App Architecture` be split into smaller, more focused modules?**
+  _Cohesion score 0.11379800853485064 - nodes in this community are weakly interconnected._
+- **Should `NPM Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._

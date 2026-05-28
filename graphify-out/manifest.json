@@ -75,9 +75,9 @@
     "semantic_hash": "744d17489cc4e580f67879b318b79029"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/App.tsx": {
-    "mtime": 1779813437.036999,
-    "ast_hash": "1e666d7b4226394d1d5fcfdb68f77e0e",
-    "semantic_hash": "1e666d7b4226394d1d5fcfdb68f77e0e"
+    "mtime": 1779942411.5078695,
+    "ast_hash": "f3374295cf251284d21659f800d58a06",
+    "semantic_hash": "f3374295cf251284d21659f800d58a06"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/main.tsx": {
     "mtime": 1779371060.4606225,
@@ -85,9 +85,9 @@
     "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/orchestrator.ts": {
-    "mtime": 1779653748.3585842,
-    "ast_hash": "92cc10667a939c115424d38d061acfdb",
-    "semantic_hash": "92cc10667a939c115424d38d061acfdb"
+    "mtime": 1779942411.5111852,
+    "ast_hash": "b3f4d4021fb265efd63c513aff830c5c",
+    "semantic_hash": "b3f4d4021fb265efd63c513aff830c5c"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/latexRenderer.ts": {
     "mtime": 1779371303.9684439,
@@ -95,9 +95,9 @@
     "semantic_hash": "7943646038b4d77d71f243b13bf9561f"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/db.ts": {
-    "mtime": 1779378394.3844988,
-    "ast_hash": "99969181edd9bcc66875f9d51da0325b",
-    "semantic_hash": "99969181edd9bcc66875f9d51da0325b"
+    "mtime": 1779942411.5106125,
+    "ast_hash": "1bb235a231c8d6266486eea8337d5bdf",
+    "semantic_hash": "1bb235a231c8d6266486eea8337d5bdf"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/services/scraper.ts": {
     "mtime": 1779371297.4328928,
@@ -110,9 +110,9 @@
     "semantic_hash": "bcff73f8f163504c5cf30e0b9e0b41f6"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/README.md": {
-    "mtime": 1779653748.345817,
-    "ast_hash": "ec4cc23e5c50c94f75347b405cc31a5c",
-    "semantic_hash": "ec4cc23e5c50c94f75347b405cc31a5c"
+    "mtime": 1779942857.598732,
+    "ast_hash": "6af3649fee2e328a7601f90b56b236b4",
+    "semantic_hash": "6af3649fee2e328a7601f90b56b236b4"
   },
   "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/public/icons.svg": {
     "mtime": 1779371060.459584,
@@ -198,5 +198,165 @@
     "mtime": 1779812025.3816683,
     "ast_hash": "5ab8d95b4eabae6ab07a790b27e613c8",
     "semantic_hash": "5ab8d95b4eabae6ab07a790b27e613c8"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/types/index.ts": {
+    "mtime": 1779942411.5114655,
+    "ast_hash": "11e4efb314a40f6675794517e168fe22",
+    "semantic_hash": "11e4efb314a40f6675794517e168fe22"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/context/AppContext.tsx": {
+    "mtime": 1779942411.5098102,
+    "ast_hash": "07e802f7296c73082b9a959e3e76b693",
+    "semantic_hash": "07e802f7296c73082b9a959e3e76b693"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/layout/MobileTabs.tsx": {
+    "mtime": 1779942411.509073,
+    "ast_hash": "b49d5608e3352a1c4c6d582c29d1982e",
+    "semantic_hash": "b49d5608e3352a1c4c6d582c29d1982e"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/layout/Header.tsx": {
+    "mtime": 1779942411.5089424,
+    "ast_hash": "a2a9fe11ddfdd5f763a5c51a59bd2c1b",
+    "semantic_hash": "a2a9fe11ddfdd5f763a5c51a59bd2c1b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/modals/SettingsModal.tsx": {
+    "mtime": 1779942411.5094812,
+    "ast_hash": "b1c2a3c9369dbf5c5e6e0982e6b4b8d0",
+    "semantic_hash": "b1c2a3c9369dbf5c5e6e0982e6b4b8d0"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/job/MatchDashboard.tsx": {
+    "mtime": 1779942411.5087595,
+    "ast_hash": "2ac50aee93ed8a45d66bfd070a1091b8",
+    "semantic_hash": "2ac50aee93ed8a45d66bfd070a1091b8"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/job/JobIngestionCard.tsx": {
+    "mtime": 1779942411.5086107,
+    "ast_hash": "3f8bdec71c7024f8c0c8852a955ad56c",
+    "semantic_hash": "3f8bdec71c7024f8c0c8852a955ad56c"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/editor/WorkspacePreview.tsx": {
+    "mtime": 1779942411.5084279,
+    "ast_hash": "e7b5a464287ac258da111bc319f19eac",
+    "semantic_hash": "e7b5a464287ac258da111bc319f19eac"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/components/editor/MasterCVEditor.tsx": {
+    "mtime": 1779942411.5081215,
+    "ast_hash": "2313882666e00859d2a07aafc9ce401d",
+    "semantic_hash": "2313882666e00859d2a07aafc9ce401d"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/hooks/useLayoutResize.ts": {
+    "mtime": 1779942411.5101135,
+    "ast_hash": "2f3158501a7cc59773b63816090f5dfc",
+    "semantic_hash": "2f3158501a7cc59773b63816090f5dfc"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/hooks/useTheme.ts": {
+    "mtime": 1779942411.510248,
+    "ast_hash": "4b84a250905f860e6e0b86798725285e",
+    "semantic_hash": "4b84a250905f860e6e0b86798725285e"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/src/hooks/useAppSettings.ts": {
+    "mtime": 1779942411.509984,
+    "ast_hash": "7b87741c04ac6654ef555c9f9907956b",
+    "semantic_hash": "7b87741c04ac6654ef555c9f9907956b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agents/rules/antigravity-rtk-rules.md": {
+    "mtime": 1779880295.2125535,
+    "ast_hash": "3eb7de4c15cb928fe79ef4989b0ecad1",
+    "semantic_hash": "3eb7de4c15cb928fe79ef4989b0ecad1"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/workflows/opsx-propose.md": {
+    "mtime": 1779878485.479048,
+    "ast_hash": "54c8d81441a57671450d903206978447",
+    "semantic_hash": "54c8d81441a57671450d903206978447"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/workflows/opsx-apply.md": {
+    "mtime": 1779878485.4785364,
+    "ast_hash": "bb34cb1101207c46f0bb431f7b8e0c5a",
+    "semantic_hash": "bb34cb1101207c46f0bb431f7b8e0c5a"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/workflows/opsx-archive.md": {
+    "mtime": 1779878485.4788024,
+    "ast_hash": "ff9017090a9eb3643dd810c32915d03b",
+    "semantic_hash": "ff9017090a9eb3643dd810c32915d03b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/workflows/opsx-explore.md": {
+    "mtime": 1779878485.4783053,
+    "ast_hash": "499dae8cb9d463bc7e7fa0a43a5634bc",
+    "semantic_hash": "499dae8cb9d463bc7e7fa0a43a5634bc"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/skills/openspec-apply-change/SKILL.md": {
+    "mtime": 1779878485.4772727,
+    "ast_hash": "113ad4a13c30634311141d6dadcc0464",
+    "semantic_hash": "113ad4a13c30634311141d6dadcc0464"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/skills/openspec-explore/SKILL.md": {
+    "mtime": 1779878485.4768534,
+    "ast_hash": "d160105373f4fe54bfbe1790b343c51b",
+    "semantic_hash": "d160105373f4fe54bfbe1790b343c51b"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/skills/openspec-archive-change/SKILL.md": {
+    "mtime": 1779878485.4775827,
+    "ast_hash": "f010cb3292d101742592bcad1abfe762",
+    "semantic_hash": "f010cb3292d101742592bcad1abfe762"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/.agent/skills/openspec-propose/SKILL.md": {
+    "mtime": 1779878485.4778934,
+    "ast_hash": "0753f4a4ce92da2b27bef07c994bef17",
+    "semantic_hash": "0753f4a4ce92da2b27bef07c994bef17"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/config.yaml": {
+    "mtime": 1779878485.479454,
+    "ast_hash": "9e3e7672b387a282583011181ab35f9a",
+    "semantic_hash": "9e3e7672b387a282583011181ab35f9a"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/specs/readme-documentation/spec.md": {
+    "mtime": 1779942951.1595035,
+    "ast_hash": "5a9d30a6e74b7cc450d3c9f37ccbd4e5",
+    "semantic_hash": "5a9d30a6e74b7cc450d3c9f37ccbd4e5"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/archive/2026-05-28-update-readme/.openspec.yaml": {
+    "mtime": 1779942432.733898,
+    "ast_hash": "833c011ecf7e08a569d9a116d6095c53",
+    "semantic_hash": "833c011ecf7e08a569d9a116d6095c53"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/archive/2026-05-28-update-readme/tasks.md": {
+    "mtime": 1779942859.6159506,
+    "ast_hash": "639e83c81c5d9c42b6cf97763330d683",
+    "semantic_hash": "639e83c81c5d9c42b6cf97763330d683"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/archive/2026-05-28-update-readme/design.md": {
+    "mtime": 1779942485.179717,
+    "ast_hash": "b12c3b48781a44d2557df80d1ad5887c",
+    "semantic_hash": "b12c3b48781a44d2557df80d1ad5887c"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/archive/2026-05-28-update-readme/proposal.md": {
+    "mtime": 1779942457.5580091,
+    "ast_hash": "b8c804f7d2976eae25e8e685cf489a1e",
+    "semantic_hash": "b8c804f7d2976eae25e8e685cf489a1e"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/archive/2026-05-28-update-readme/specs/readme-documentation/spec.md": {
+    "mtime": 1779942503.8522303,
+    "ast_hash": "5a9d30a6e74b7cc450d3c9f37ccbd4e5",
+    "semantic_hash": "5a9d30a6e74b7cc450d3c9f37ccbd4e5"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/refactor-architecture/.openspec.yaml": {
+    "mtime": 1779942411.5059016,
+    "ast_hash": "833c011ecf7e08a569d9a116d6095c53",
+    "semantic_hash": "833c011ecf7e08a569d9a116d6095c53"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/refactor-architecture/tasks.md": {
+    "mtime": 1779942411.5072737,
+    "ast_hash": "bef30cadeb093404454eb882830dbcee",
+    "semantic_hash": "bef30cadeb093404454eb882830dbcee"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/refactor-architecture/design.md": {
+    "mtime": 1779942411.5062706,
+    "ast_hash": "8d06818bc0ffe6cda920b8268a6b9dd0",
+    "semantic_hash": "8d06818bc0ffe6cda920b8268a6b9dd0"
+  },
+  "/Users/sahirskd/Desktop/Projects/Work/CV-Fix/openspec/changes/refactor-architecture/proposal.md": {
+    "mtime": 1779942411.506501,
+    "ast_hash": "b35d20de731125dba44c63633ce1ad5d",
+    "semantic_hash": "b35d20de731125dba44c63633ce1ad5d"
   }
 }
