@@ -101,7 +101,7 @@ Compiled packages will be saved to `src-tauri/target/release/bundle/`.
 ---
 
 ## 💻 Technologies Used
- 
+
 - **Frameworks:** React 19, TypeScript, Vite
 - **Desktop Runtime:** Tauri v2 (Rust Core)
 - **Styling:** Tailwind CSS v4, Neubrutalism design patterns
