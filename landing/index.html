@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <title>CV-Fix — Local-First LaTeX Resume Tailoring Command Center</title>
+  <meta name="description" content="Tailor your Master LaTeX resume against any job description in seconds. Get a 10-dimension scorecard, 6-block recruiter brief, syntax-safe LaTeX mutation, and instant A4 PDF export — 100% locally.">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/cv-fix-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+  <!-- Floating Frosted Pill Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="#home">
+        <img src="./assets/cv-fix-icon.svg" alt="" width="28" height="28">
+        <span>CV-Fix</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+          aria-expanded="false"
+        >
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">Workflow</a></li>
+          <li><a href="#runtimes">Runtimes</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://github.com/sahirskd/CV-Fix" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+
+        <a class="nav-cta" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16" />
+          </svg>
+          <span>Download</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         1. HERO SECTION (#home)
+         ==================================================================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-glow-left" aria-hidden="true"></div>
+      <div class="hero-glow-right" aria-hidden="true"></div>
+
+      <!-- Ambient Dual-Color Curved Light Waves (Cyan #00D4FF + Pink #FF6B9D) -->
+      <div class="ambient-waves" aria-hidden="true">
+        <svg viewBox="0 0 1440 740" fill="none" preserveAspectRatio="xMidYMin slice">
+          <defs>
+            <linearGradient id="wave-cyan" x1="120" y1="620" x2="760" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00D4FF" stop-opacity="0" />
+              <stop offset="45%" stop-color="#00D4FF" stop-opacity="0.85" />
+              <stop offset="100%" stop-color="#00D4FF" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="wave-pink" x1="1320" y1="620" x2="660" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FF6B9D" stop-opacity="0" />
+              <stop offset="48%" stop-color="#FF6B9D" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path d="M-80 560 C 260 560, 410 340, 520 180 C 610 50, 740 160, 880 390" stroke="url(#wave-cyan)" stroke-width="2.5" />
+          <path d="M-40 480 C 230 330, 420 420, 620 260 C 760 150, 920 240, 1080 470" stroke="url(#wave-cyan)" stroke-opacity="0.4" stroke-width="1.5" />
+          <path d="M1520 560 C 1180 560, 1030 340, 920 180 C 830 50, 700 160, 560 390" stroke="url(#wave-pink)" stroke-width="2.5" />
+          <path d="M1480 480 C 1210 330, 1020 420, 820 260 C 680 150, 520 240, 360 470" stroke="url(#wave-pink)" stroke-opacity="0.4" stroke-width="1.5" />
+        </svg>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-icon-tile">
+          <img src="./assets/cv-fix-icon.svg" alt="CV-Fix application icon" width="76" height="76">
+        </div>
+
+        <a class="version-pill" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+          <span>Latest version</span>
+          <strong>v1.0.3</strong>
+          <span>MIT Open Source &rarr;</span>
+        </a>
+
+        <p class="hero-eyebrow">
+          <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+          <span>Local-First LaTeX Resume Tailoring · Web PWA &amp; macOS App</span>
+        </p>
+
+        <h1 class="hero-title" id="hero-title">Tailor your LaTeX resume in seconds.</h1>
+
+        <p class="hero-subtitle">
+          Paste a target job URL, score your Master LaTeX CV across 10 weighted dimensions, generate a 6-block recruiter brief, mutate bullets without breaking macros, and print an A4 PDF — 100% locally.
+        </p>
+
+        <p class="hero-trust">
+          <span class="hero-trust-badge">ZERO BACKENDS</span>
+          <span>·</span>
+          <span>IndexedDB Storage · BYOK Gemini/Claude or Keyless Local CLI</span>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16" />
+            </svg>
+            <span>Download for macOS — Free</span>
+          </a>
+          <a class="btn-secondary" href="#runtimes">
+            <span>Run Web PWA / CLI Locally</span>
+          </a>
+        </div>
+
+        <div class="hero-micro-tags" aria-label="Key capabilities summary">
+          <span>MIT Open Source</span>
+          <span>Monaco LaTeX Editor</span>
+          <span>Ashby · Greenhouse · Lever · LinkedIn</span>
+          <span>10-Dimension Scorecard</span>
+          <span>6-Block Recruiter Brief</span>
+          <span>A4 Print-to-PDF</span>
+        </div>
+
+        <!-- Interactive Hero Workstation Frame -->
+        <div class="hero-showcase-wrap">
+          <div class="hero-showcase">
+            <div class="window-chrome">
+              <div class="window-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="window-title">CV-Fix Workstation — Master LaTeX · Tailored Preview · Match Dashboard</span>
+              <div class="ui-tablist" role="tablist" aria-label="Hero workstation center view">
+                <button type="button" role="tab" class="ui-tab" id="hero-tab-preview" aria-selected="true" data-hero-tab="preview">A4 Preview</button>
+                <button type="button" role="tab" class="ui-tab" id="hero-tab-code" aria-selected="false" data-hero-tab="code">Tailored .tex</button>
+                <button type="button" role="tab" class="ui-tab" id="hero-tab-score" aria-selected="false" data-hero-tab="score">10-Dim Score</button>
+              </div>
+            </div>
+
+            <div class="hero-showcase-grid">
+              <!-- Left Column: Master LaTeX + JD Ingestion -->
+              <div class="ws-pane">
+                <div class="ws-pane-label">
+                  <span>Master LaTeX Registry</span>
+                  <span class="ws-badge-pink">IndexedDB</span>
+                </div>
+                <pre class="ws-code-box" aria-label="Sample Master LaTeX snippet"><code><span class="tex-cmd">\resumeSubheading</span>
+  {<span class="tex-arg">CloudOps Technologies</span>}{Remote}
+  {Software Engineer}{2022 -- Present}
+<span class="tex-cmd">\resumeItemListStart</span>
+  <span class="tex-cmd">\resumeItem</span>{Built TypeScript pipelines,
+   cutting query latency by 35\%.}
+<span class="tex-cmd">\resumeItemListEnd</span></code></pre>
+
+                <div class="ws-pane-label">
+                  <span>Target Job Ingestion</span>
+                  <span class="ws-badge-cyan">ATS Ready</span>
+                </div>
+                <div class="ws-jd-box">
+                  <span class="ws-jd-url">https://jobs.ashbyhq.com/acme/sr-platform-eng</span>
+                  <span>Extracted: TypeScript, AWS deployment automation, React performance (LCP), distributed telemetry.</span>
+                </div>
+              </div>
+
+              <!-- Center Column: Tabbed Live Workspace -->
+              <div class="ws-center-panel">
+                <div class="ws-tabpanel" role="tabpanel" aria-labelledby="hero-tab-preview" data-hero-panel="preview" tabindex="0">
+                  <div class="ws-tabpanel-inner">
+                    <div class="ws-pane-label">
+                      <span>A4 Live HTML Facsimile</span>
+                      <span class="ws-badge-cyan">100% Scale · Print Ready</span>
+                    </div>
+                    <div class="mini-a4">
+                      <div class="mini-a4-header">
+                        <div class="mini-a4-name">Alex Developer</div>
+                        <div class="mini-a4-contact">123-456-7890 | alex@example.com | github.com/alexdev</div>
+                      </div>
+                      <div class="mini-a4-sec">Professional Summary</div>
+                      <div>Platform-minded Full-Stack Engineer specializing in <mark>TypeScript microservices</mark>, React LCP tuning, and automated <mark>AWS CI/CD pipelines</mark>.</div>
+                      <div class="mini-a4-sec">Experience</div>
+                      <div><strong>CloudOps Technologies</strong> — <em>Software Engineer</em></div>
+                      <ul>
+                        <li>Architected <mark>high-throughput TypeScript</mark> backend pipelines, reducing p95 query latency by <strong>35%</strong>.</li>
+                        <li>Slashed AWS deployment cycles from 25m to <strong>8m</strong> across production microservices.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ws-tabpanel" role="tabpanel" aria-labelledby="hero-tab-code" data-hero-panel="code" hidden>
+                  <div class="ws-tabpanel-inner">
+                    <div class="ws-pane-label">
+                      <span>Mutated LaTeX Output</span>
+                      <span class="ws-badge-pink">Temp 0.1 · Macros Locked</span>
+                    </div>
+                    <pre class="ws-code-box" tabindex="0"><code><span class="tex-muted">% Structural commands preserved verbatim</span>
+<span class="tex-cmd">\resumeSubheading</span>
+  {CloudOps Technologies}{Remote}
+  {Software Engineer}{June 2022 -- Present}
+<span class="tex-cmd">\resumeItemListStart</span>
+  <span class="tex-cmd">\resumeItem</span>{<span class="tex-arg">Architected high-throughput TypeScript</span>
+    backend pipelines, reducing p95 DB query latency by 35\%.}
+  <span class="tex-cmd">\resumeItem</span>{<span class="tex-arg">Automated zero-downtime AWS CI/CD</span>
+    workflows, cutting release cycles from 25m down to 8m.}
+<span class="tex-cmd">\resumeItemListEnd</span></code></pre>
+                  </div>
+                </div>
+
+                <div class="ws-tabpanel" role="tabpanel" aria-labelledby="hero-tab-score" data-hero-panel="score" hidden>
+                  <div class="ws-tabpanel-inner">
+                    <div class="ws-pane-label">
+                      <span>10-Dimension ATS Scorecard</span>
+                      <span class="ws-badge-cyan">Weighted Index</span>
+                    </div>
+                    <div class="ws-score-badge">
+                      <div class="grade-circle">A</div>
+                      <div>
+                        <strong>93% Weighted Match Index</strong>
+                        <div class="tex-muted" style="font-size:0.76rem">Tailored across 10 weighted recruiter rubrics</div>
+                      </div>
+                    </div>
+                    <div class="dim-row">
+                      <div class="dim-meta"><span>Hard Skills Coverage (15%)</span><span>95%</span></div>
+                      <div class="dim-track"><div class="dim-fill" style="width:95%"></div></div>
+                    </div>
+                    <div class="dim-row">
+                      <div class="dim-meta"><span>Impact Metrics &amp; Numbers (15%)</span><span>92%</span></div>
+                      <div class="dim-track"><div class="dim-fill" style="width:92%"></div></div>
+                    </div>
+                    <div class="dim-row">
+                      <div class="dim-meta"><span>Keywords Matching Density (15%)</span><span>94%</span></div>
+                      <div class="dim-track"><div class="dim-fill" style="width:94%"></div></div>
+                    </div>
+                    <div class="dim-row">
+                      <div class="dim-meta"><span>LaTeX Formatting Hygiene (5%)</span><span>100%</span></div>
+                      <div class="dim-track"><div class="dim-fill" style="width:100%"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Recruiter Evaluation Preview -->
+              <div class="ws-pane">
+                <div class="ws-pane-label">
+                  <span>Match Dashboard</span>
+                  <span class="ws-badge-cyan">Grade A · 93%</span>
+                </div>
+                <div class="ws-score-badge">
+                  <div class="grade-circle">A</div>
+                  <div>
+                    <div style="font-weight:700;font-size:0.86rem">Strong Alignment</div>
+                    <div style="font-size:0.72rem;color:#a1a1aa">10 dimensions scored</div>
+                  </div>
+                </div>
+                <div class="ws-pane-label" style="margin-top:0.25rem">
+                  <span>6-Block Assessment</span>
+                  <span class="ws-badge-pink">STAR Ready</span>
+                </div>
+                <div class="ws-jd-box">
+                  <strong style="display:block;margin-bottom:0.25rem;color:#fff">3. Seniority Level Strategy</strong>
+                  <span>Position AWS pipeline automation (25m &rarr; 8m) and LCP speedups as Senior-level ownership.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         2. PROBLEM / SOLUTION CONTRAST (#problem)
+         ==================================================================== -->
+    <section class="section-block" id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <h2 class="section-heading" id="problem-heading">
+          You have the experience.<br>Now every role wants a tailored resume.
+        </h2>
+        <p class="section-sub">
+          Tailoring a technical LaTeX CV usually traps you between two frustrating extremes — both slow you down right when you want to apply.
+        </p>
+
+        <ul class="pill-strip" style="margin-top:2rem" aria-label="Supported workflow capabilities">
+          <li class="pill-tag">LaTeX Syntax Lock</li>
+          <li class="pill-tag">Ashby / Greenhouse / Lever</li>
+          <li class="pill-tag">LinkedIn Parsing</li>
+          <li class="pill-tag">10-Dimension Rubric</li>
+          <li class="pill-tag">6-Block Recruiter Brief</li>
+          <li class="pill-tag">Keyless Local Gemini CLI</li>
+          <li class="pill-tag">Instant A4 PDF</li>
+        </ul>
+
+        <div class="problem-grid">
+          <article class="contrast-card">
+            <span class="contrast-kicker">Option 01</span>
+            <h3>Paste into generic AI chat</h3>
+            <p>
+              Chatbots rewrite <code>\resumeSubheading</code> macros, hallucinate unclosed braces, break Overleaf compilation, and bloat your 1-page resume onto a messy second page.
+            </p>
+          </article>
+
+          <article class="contrast-card">
+            <span class="contrast-kicker">Option 02</span>
+            <h3>Hand-edit <code>.tex</code> for every job</h3>
+            <p>
+              45 minutes per application swapping keywords, re-compiling locally, and guessing whether you missed seniority cues or quantifiable impact metrics.
+            </p>
+          </article>
+
+          <article class="contrast-card contrast-card--highlight">
+            <span class="contrast-kicker">The CV-Fix way</span>
+            <h3>Or just use CV-Fix</h3>
+            <p>
+              Paste the job link once. Keep your LaTeX structure locked while receiving a 10-dimension scorecard, 6-block recruiter brief, and ready-to-print A4 PDF in under a minute.
+            </p>
+          </article>
+        </div>
+
+        <div style="margin-top:2.5rem">
+          <a class="btn-primary" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+            <span>Download CV-Fix — Free</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. THREE-STEP WORKFLOW (#how-it-works)
+         ==================================================================== -->
+    <section class="section-block" id="how-it-works" aria-labelledby="workflow-heading">
+      <div class="container">
+        <h2 class="section-heading" id="workflow-heading">
+          From job link to tailored PDF<br>in three steps.
+        </h2>
+        <p class="section-sub">
+          No copy-paste gymnastics, no broken TeX macros, and no cloud account walls.
+        </p>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-num">Step 1</span>
+            <h3>Ingest Master CV &amp; JD</h3>
+            <p>
+              Store your Master LaTeX template in the local Monaco editor, then paste any Ashby, Greenhouse, Lever, or LinkedIn URL — or drop raw job description text directly.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">Step 2</span>
+            <h3>Score &amp; Mutate Safely</h3>
+            <p>
+              Run Gemini 2.0 Flash, Claude 3.5 Sonnet, or Keyless Local Gemini CLI at low temperature (<code>0.1</code>) to grade 10 match dimensions and update only text nodes inside your TeX commands.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">Step 3</span>
+            <h3>Tweak &amp; Print A4 PDF</h3>
+            <p>
+              Inspect the live A4 HTML facsimile, send quick instructions like <em>"emphasize leadership"</em> or <em>"shorten to 1 page"</em>, and print directly to PDF or download clean <code>.tex</code>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. NUMBERED FEATURE CHAPTERS (#features) — 6 INTERACTIVE MINIATURES
+         ==================================================================== -->
+    <section class="features-section" id="features" aria-label="Feature chapters">
+      <div class="container">
+
+        <!-- Chapter 01 · Surgical LaTeX -->
+        <div class="chapter-block">
+          <div class="chapter-header">
+            <span class="chapter-eyebrow">01 · Surgical LaTeX</span>
+            <h2 class="section-heading">Engineered for LaTeX precision,<br>zero broken builds.</h2>
+            <p class="section-sub">
+              Keep your custom macros, margins, and one-page geometry intact while every bullet adapts to the role.
+            </p>
+          </div>
+
+          <div class="showcase-stack">
+            <!-- Feature Card 1: Zero-Breakage LaTeX Mutation -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>Zero-breakage LaTeX mutation, so compilation never fails</h3>
+                <p>
+                  Prompt constraints lock <code>\begin{document}</code>, <code>\resumeSubheading</code>, and item environments while rewriting summaries, experience bullets, and skills arrays at <code>temperature: 0.1</code>.
+                </p>
+                <span class="showcase-source-tag">Try toggling Original vs. Tailored Diff &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="latex-diff">
+                <div class="mini-toolbar">
+                  <div class="mini-chip-row">
+                    <button type="button" class="mini-btn" data-diff-mode="original" aria-pressed="false">Original Master</button>
+                    <button type="button" class="mini-btn mini-btn--pink" data-diff-mode="tailored" aria-pressed="true">Tailored Mutation</button>
+                  </div>
+                  <span class="ws-badge-cyan" style="font-family:var(--font-mono);font-size:0.72rem" data-diff-status>Macros Locked · 0 Syntax Errors</span>
+                </div>
+
+                <pre class="ws-code-box" tabindex="0"><code data-diff-code><span class="code-line code-line--locked"><span class="tex-cmd">\resumeSubheading</span>{CloudOps Technologies}{Remote}{Software Engineer}{2022--Present}</span>
+<span class="code-line code-line--locked"><span class="tex-cmd">\resumeItemListStart</span></span>
+<span class="code-line code-line--mutated"><span class="tex-cmd">\resumeItem</span>{<span class="tex-arg">Architected low-latency TypeScript</span> backend pipelines, cutting p95 query response time by <span class="tex-arg">35\%</span>.}</span>
+<span class="code-line code-line--mutated"><span class="tex-cmd">\resumeItem</span>{<span class="tex-arg">Automated multi-stage AWS CI/CD</span> delivery, shrinking deploy times from 25m down to <span class="tex-arg">8m</span>.}</span>
+<span class="code-line code-line--locked"><span class="tex-cmd">\resumeItemListEnd</span></span></code></pre>
+              </div>
+            </article>
+
+            <!-- Feature Card 2: Live A4 HTML Facsimile & Print -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>Live A4 HTML facsimile, so you see the page before printing</h3>
+                <p>
+                  Inspect standard LaTeX serif margins directly in your workspace with interactive zoom controls, copy or download <code>.tex</code> source, or print crisp A4 PDFs via built-in <code>@media print</code> styles.
+                </p>
+                <span class="showcase-source-tag">Drag zoom or test Export buttons &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="a4-preview">
+                <div class="mini-toolbar">
+                  <label class="range-wrap" for="mini-zoom-range">
+                    <span>Zoom</span>
+                    <input id="mini-zoom-range" type="range" min="75" max="110" value="95">
+                    <span data-zoom-label>95%</span>
+                  </label>
+                  <div class="mini-chip-row">
+                    <button type="button" class="mini-btn" data-a4-action="tex">Download .tex</button>
+                    <button type="button" class="mini-btn mini-btn--pink" data-a4-action="pdf">Print A4 PDF</button>
+                  </div>
+                </div>
+
+                <div class="a4-zoom-viewport">
+                  <div class="mini-a4 a4-zoom-sheet" data-zoom-sheet style="transform: scale(0.95)">
+                    <div class="mini-a4-header">
+                      <div class="mini-a4-name">Alex Developer</div>
+                      <div class="mini-a4-contact">alex@example.com | linkedin.com/in/alexdev</div>
+                    </div>
+                    <div class="mini-a4-sec">Education</div>
+                    <div><strong>State University of Technology</strong> · B.S. CS</div>
+                    <div class="mini-a4-sec">Experience</div>
+                    <div><strong>CloudOps Technologies</strong> · <em>Software Engineer</em></div>
+                    <ul>
+                      <li>Cut DB query latency <strong>35%</strong> in TypeScript.</li>
+                      <li>Boosted React LCP speed by <strong>40%</strong>.</li>
+                      <li>Shrank AWS CI/CD deploys from 25m to <strong>8m</strong>.</li>
+                    </ul>
+                    <div class="mini-a4-sec">Skills</div>
+                    <div>TypeScript, React, Node.js, AWS, Docker, LaTeX</div>
+                  </div>
+                </div>
+                <div class="mini-feedback" aria-live="polite" data-a4-feedback></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Chapter 02 · Recruiter Intelligence -->
+        <div class="chapter-block">
+          <div class="chapter-header">
+            <span class="chapter-eyebrow chapter-eyebrow--pink">02 · Recruiter Intelligence</span>
+            <h2 class="section-heading">Know where you stand<br>before you hit submit.</h2>
+            <p class="section-sub">
+              Every tailoring run pairs your mutated resume with a weighted ATS scorecard and a 6-block hiring manager breakdown.
+            </p>
+          </div>
+
+          <div class="showcase-stack">
+            <!-- Feature Card 3: 10-Dimension Weighted Scorecard -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>10-dimension weighted scorecard, so blind spots aren’t guesswork</h3>
+                <p>
+                  Evaluates Hard Skills, Impact Metrics, Keywords, Action Verbs, Scope Fit, Structure, LaTeX Hygiene, and Gaps Risk into a weighted <code>0–100%</code> index and an <code>A–F</code> grade.
+                </p>
+                <span class="showcase-source-tag">Compare Before vs. After tailoring &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="scorecard">
+                <div class="mini-toolbar">
+                  <div class="mini-chip-row">
+                    <button type="button" class="mini-btn" data-score-mode="before" aria-pressed="false">Before Tailoring</button>
+                    <button type="button" class="mini-btn" data-score-mode="after" aria-pressed="true">After CV-Fix</button>
+                  </div>
+                  <span style="font-family:var(--font-mono);font-size:0.76rem;color:var(--cyan)" data-score-summary>Grade A · 93%</span>
+                </div>
+
+                <div class="ws-score-badge">
+                  <div class="grade-circle" data-score-grade>A</div>
+                  <div>
+                    <strong data-score-index>93% Weighted Match Index</strong>
+                    <div style="font-size:0.75rem;color:#a1a1aa" data-score-verdict>Excellent match — tailored metrics &amp; keywords aligned</div>
+                  </div>
+                </div>
+
+                <div class="score-dims-grid" data-score-dims>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>Hard Skills (15%)</span><span data-dim-val="0">95%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="0" style="width:95%"></div></div>
+                  </div>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>Impact Metrics (15%)</span><span data-dim-val="1">92%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="1" style="width:92%"></div></div>
+                  </div>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>Keywords Density (15%)</span><span data-dim-val="2">94%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="2" style="width:94%"></div></div>
+                  </div>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>Action Verbs (10%)</span><span data-dim-val="3">90%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="3" style="width:90%"></div></div>
+                  </div>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>Scope / Scale Fit (10%)</span><span data-dim-val="4">88%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="4" style="width:88%"></div></div>
+                  </div>
+                  <div class="dim-row">
+                    <div class="dim-meta"><span>LaTeX Hygiene (5%)</span><span data-dim-val="5">100%</span></div>
+                    <div class="dim-track"><div class="dim-fill" data-dim-bar="5" style="width:100%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature Card 4: 6-Block Recruiter Brief & STAR Prep -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>6-block recruiter brief &amp; STAR prep, so you ace the screen too</h3>
+                <p>
+                  Go beyond resume edits with Role Mission Summary, Strengths &amp; Gaps, Seniority Level Strategy, Salary Bracket Estimates, Personalization Blueprint, and 3 targeted STAR interview outlines.
+                </p>
+                <span class="showcase-source-tag">Inspect all 6 pipeline blocks &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="recruiter-brief">
+                <div class="mini-toolbar">
+                  <div class="mini-chip-row" role="tablist" aria-label="6 recruiter assessment blocks">
+                    <button type="button" role="tab" class="mini-btn" aria-selected="true" data-brief-tab="0">1. Mission</button>
+                    <button type="button" role="tab" class="mini-btn" aria-selected="false" data-brief-tab="1">2. Gaps</button>
+                    <button type="button" role="tab" class="mini-btn" aria-selected="false" data-brief-tab="2">3. Level</button>
+                    <button type="button" role="tab" class="mini-btn" aria-selected="false" data-brief-tab="3">4. Salary</button>
+                    <button type="button" role="tab" class="mini-btn" aria-selected="false" data-brief-tab="4">5. Blueprint</button>
+                    <button type="button" role="tab" class="mini-btn" aria-selected="false" data-brief-tab="5">6. STAR</button>
+                  </div>
+                </div>
+
+                <div class="brief-box" data-brief-panel>
+                  <span class="brief-kicker" data-brief-kicker>Block 1 of 6 · Role Mission Summary</span>
+                  <h4 class="brief-title" data-brief-title>Core Engineering Mandate</h4>
+                  <p class="brief-body" data-brief-body>
+                    Own core TypeScript/Node.js backend pipelines and frontend performance (Core Web Vitals / LCP) on a lean platform squad scaling automated AWS delivery.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Chapter 03 · Speed & Local-First Privacy -->
+        <div class="chapter-block">
+          <div class="chapter-header">
+            <span class="chapter-eyebrow">03 · Speed &amp; Local-First Privacy</span>
+            <h2 class="section-heading">Fast iteration.<br>Zero external databases.</h2>
+            <p class="section-sub">
+              Your Master resume, history, and API credentials stay inside IndexedDB on your machine — or bypass API keys entirely via local CLI.
+            </p>
+          </div>
+
+          <div class="showcase-stack">
+            <!-- Feature Card 5: One-Click ATS Scraping + Standing Tweak Bar -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>One-click ATS scraping &amp; tweak bar, so iterating takes seconds</h3>
+                <p>
+                  Clean DOM extractors parse Ashby, Greenhouse, Lever, and LinkedIn postings automatically — plus a standing re-tailor bar lets you steer tone, emphasis, or page length in one click.
+                </p>
+                <span class="showcase-source-tag">Pick an ATS board &amp; test quick tweaks &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="ats-tweak">
+                <div class="mini-toolbar">
+                  <div class="mini-chip-row">
+                    <button type="button" class="mini-btn" data-ats="ashby" aria-pressed="true">Ashby</button>
+                    <button type="button" class="mini-btn" data-ats="greenhouse" aria-pressed="false">Greenhouse</button>
+                    <button type="button" class="mini-btn" data-ats="lever" aria-pressed="false">Lever</button>
+                    <button type="button" class="mini-btn" data-ats="linkedin" aria-pressed="false">LinkedIn</button>
+                  </div>
+                </div>
+
+                <div class="sim-url-bar" data-ats-url>https://jobs.ashbyhq.com/linear/staff-frontend-engineer</div>
+
+                <div class="mini-chip-row">
+                  <button type="button" class="mini-btn mini-btn--pink" data-tweak="leadership" aria-pressed="true">+ Emphasize leadership</button>
+                  <button type="button" class="mini-btn mini-btn--pink" data-tweak="onepage" aria-pressed="false">+ Shorten to 1 page</button>
+                  <button type="button" class="mini-btn mini-btn--pink" data-tweak="metrics" aria-pressed="false">+ Quantify scale metrics</button>
+                </div>
+
+                <div class="sim-output-card" data-ats-output>
+                  <strong>Active Directive:</strong> Parsed <em>Staff Frontend Engineer (Ashby)</em>. Applying tweak: <code>"Emphasize cross-team architecture &amp; frontend mentorship"</code>.
+                </div>
+              </div>
+            </article>
+
+            <!-- Feature Card 6: Multi-Engine Execution & Privacy -->
+            <article class="showcase-card">
+              <div class="showcase-copy">
+                <h3>BYOK cloud models or keyless local Gemini CLI — zero backend</h3>
+                <p>
+                  Bring your own Google Gemini 2.0 Flash or Anthropic Claude 3.5 Sonnet key stored locally in IndexedDB, or invoke your local <code>gemini</code> terminal CLI directly inside the Tauri macOS desktop app.
+                </p>
+                <span class="showcase-source-tag">Switch AI execution engine &rarr;</span>
+              </div>
+
+              <div class="mini-stage" data-mini="engine">
+                <div class="mini-toolbar">
+                  <div class="mini-chip-row">
+                    <button type="button" class="mini-btn" data-engine="gemini" aria-pressed="false">Gemini 2.0 Flash</button>
+                    <button type="button" class="mini-btn" data-engine="claude" aria-pressed="false">Claude 3.5 Sonnet</button>
+                    <button type="button" class="mini-btn mini-btn--pink" data-engine="cli" aria-pressed="true">Local Gemini CLI</button>
+                  </div>
+                </div>
+
+                <div class="sim-output-card">
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.45rem">
+                    <strong data-engine-name>Keyless Local Gemini CLI (Tauri / Dev)</strong>
+                    <span class="ws-badge-cyan" style="font-family:var(--font-mono);font-size:0.72rem" data-engine-auth>NO API KEY REQUIRED</span>
+                  </div>
+                  <p style="margin:0;color:#a1a1aa;font-size:0.82rem" data-engine-desc>
+                    Executes <code>gemini -p &lt;prompt&gt; --skip-trust --yolo</code> locally via Tauri's Rust command runner (<code>run_gemini_cli</code>). Credentials never touch a browser bundle or third-party backend.
+                  </p>
+                </div>
+
+                <div class="ws-pane-label">
+                  <span>Persistence: idb-keyval (Browser / App Sandbox)</span>
+                  <span style="color:var(--emerald)">Zero Telemetry</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. CENTERPIECE RUNTIME CARD (#runtimes)
+         ==================================================================== -->
+    <section class="runtimes-section" id="runtimes" aria-labelledby="runtimes-heading">
+      <div class="container">
+        <h2 class="section-heading" id="runtimes-heading">
+          Free forever.<br>Run how you work.
+        </h2>
+        <p class="section-sub">
+          MIT open source with zero subscriptions and zero vendor lock-in. Pick the macOS desktop app for keyless local CLI power, or run locally as a PWA.
+        </p>
+
+        <div class="runtime-arc-glow">
+          <div class="runtime-card">
+            <div class="runtime-card-head">
+              <img src="./assets/cv-fix-icon.svg" alt="" width="28" height="28">
+              <span data-runtime-title>CV-Fix macOS Desktop App</span>
+            </div>
+
+            <div class="segmented-control" role="group" aria-label="Choose CV-Fix runtime">
+              <button type="button" class="segmented-btn" data-runtime="pwa" aria-pressed="false">Web PWA</button>
+              <button type="button" class="segmented-btn" data-runtime="macos" aria-pressed="true">macOS App</button>
+              <button type="button" class="segmented-btn" data-runtime="cli" aria-pressed="false">Local CLI</button>
+            </div>
+
+            <div class="price-row">
+              <span class="price-big">$0</span>
+              <span class="price-strike" aria-label="No recurring fee">$29/mo</span>
+            </div>
+
+            <div class="runtime-callout">
+              <span class="runtime-callout-title" data-runtime-callout-title>Native Tauri v2 (.dmg / .app) · v1.0.3</span>
+              <div class="runtime-callout-bar" aria-hidden="true"></div>
+              <span class="runtime-callout-sub" data-runtime-callout-sub>Apple Silicon &amp; Intel builds via GitHub Releases</span>
+            </div>
+
+            <ul class="runtime-checklist" data-runtime-list>
+              <li><span class="check-dot" aria-hidden="true">&#10003;</span><span>Native macOS window powered by Rust &amp; Tauri v2</span></li>
+              <li><span class="check-dot" aria-hidden="true">&#10003;</span><span>Supports keyless local <code>gemini</code> CLI execution</span></li>
+              <li><span class="check-dot" aria-hidden="true">&#10003;</span><span>Local IndexedDB history, Master CV &amp; API key storage</span></li>
+              <li><span class="check-dot" aria-hidden="true">&#10003;</span><span>All 10 scorecard dims &amp; 6 recruiter blocks unlocked</span></li>
+            </ul>
+
+            <a
+              class="btn-primary"
+              data-runtime-cta
+              href="https://github.com/sahirskd/CV-Fix/releases/latest"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download macOS Release (v1.0.3)
+            </a>
+
+            <span class="runtime-footnote" data-runtime-footnote>
+              MIT License · Download verified builds from GitHub Releases
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. FAQ ACCORDION (#faq)
+         ==================================================================== -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <svg class="faq-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+                <span>Are my resume and API keys stored on an external server?</span>
+              </button>
+            </h3>
+            <div class="faq-panel" hidden="until-found">
+              No. CV-Fix has no database backend. Your Master LaTeX template, optimization history, and Gemini or Anthropic API keys stay inside your local IndexedDB sandbox (via <code>idb-keyval</code>), and requests only go directly to the AI endpoint you choose.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <svg class="faq-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+                <span>Will AI break my custom LaTeX macros or 1-page layout?</span>
+              </button>
+            </h3>
+            <div class="faq-panel" hidden="until-found">
+              The Mutation Engine runs at low temperature (<code>0.1</code>) with strict system rules forbidding changes to <code>\documentclass</code>, margins, packages, <code>\resumeSubheading</code>, or <code>\resumeItemListStart</code>. Only the text inside bullets, summary, and skills updates — and you can reset or edit any line directly in Monaco.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <svg class="faq-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+                <span>Which job boards work with URL scraping, and what if a site blocks it?</span>
+              </button>
+            </h3>
+            <div class="faq-panel" hidden="until-found">
+              CV-Fix includes dedicated extractors for <strong>Greenhouse</strong>, <strong>Lever</strong>, <strong>Ashby</strong>, and public <strong>LinkedIn</strong> job pages alongside generic HTML parsing. If a site blocks proxy scraping, you can paste the unstructured job description directly into the text box.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <svg class="faq-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+                <span>Do I need a paid API key to use CV-Fix?</span>
+              </button>
+            </h3>
+            <div class="faq-panel" hidden="until-found">
+              You can bring your own Google Gemini 2.0 Flash or Anthropic Claude 3.5 Sonnet API key, or use <strong>Keyless Local Gemini CLI</strong> mode inside the Tauri macOS desktop app (or local Vite dev server) if <code>gemini</code> is installed on your system path.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <svg class="faq-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m9 6 6 6-6 6" />
+                </svg>
+                <span>How do I export a PDF without installing TeX Live locally?</span>
+              </button>
+            </h3>
+            <div class="faq-panel" hidden="until-found">
+              CV-Fix parses your LaTeX resume into a live A4 HTML facsimile matching standard LaTeX serif layout. Click <strong>Download PDF</strong> to save cleanly via system print (<code>@media print</code>), or download the mutated <code>.tex</code> file for Overleaf or <code>pdflatex</code>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. FINAL CTA (#get-started)
+         ==================================================================== -->
+    <section class="final-cta" id="get-started" aria-labelledby="final-cta-heading">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="section-heading" id="final-cta-heading">
+            Your next tailored resume<br>is seconds away.
+          </h2>
+          <p class="section-sub">
+            No subscriptions, no broken TeX builds, and no data leaving your device. Download CV-Fix and ship stronger applications today.
+          </p>
+          <a class="btn-primary" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16" />
+            </svg>
+            <span>Download Latest Release</span>
+          </a>
+          <p class="final-cta-meta">MIT Open Source · macOS Universal Binary &amp; Source Releases</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="site-logo" href="#home">
+            <img src="./assets/cv-fix-icon.svg" alt="" width="28" height="28">
+            <span>CV-Fix</span>
+          </a>
+          <p>
+            Local-first LaTeX Resume Tailoring &amp; Optimization Command Center built with React 19, Tauri v2, and Monaco.
+          </p>
+          <a class="nav-cta" href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">
+            <span>Download Latest Release</span>
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">Workflow</a></li>
+            <li><a href="#runtimes">Runtimes</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Project</h3>
+          <ul>
+            <li><a href="https://github.com/sahirskd/CV-Fix" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="https://github.com/sahirskd/CV-Fix/releases/latest" target="_blank" rel="noopener noreferrer">Latest Releases</a></li>
+            <li><a href="https://github.com/sahirskd/CV-Fix/blob/main/README.md" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+            <li><a href="https://github.com/sahirskd/CV-Fix/issues" target="_blank" rel="noopener noreferrer">Report an Issue</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>CV-Fix · MIT License</span>
+        <span>100% Local-First · Zero External Servers</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

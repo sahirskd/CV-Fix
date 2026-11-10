@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="cvfix-bg" x1="10" y1="8" x2="112" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A2234"/>
+      <stop offset="55%" stop-color="#0C101A"/>
+      <stop offset="100%" stop-color="#1A1120"/>
+    </linearGradient>
+    <linearGradient id="cvfix-rim" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF6B9D" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="cvfix-wrench" x1="56" y1="30" x2="94" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#FF6B9D"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#cvfix-bg)"/>
+  <rect x="4.75" y="4.75" width="110.5" height="110.5" rx="27.25" stroke="url(#cvfix-rim)" stroke-width="1.5"/>
+  <!-- Document / LaTeX resume lines -->
+  <rect x="26" y="32" width="38" height="6" rx="3" fill="#FFFFFF"/>
+  <rect x="26" y="47" width="30" height="5" rx="2.5" fill="rgba(255,255,255,0.68)"/>
+  <rect x="26" y="61" width="42" height="5" rx="2.5" fill="rgba(255,255,255,0.68)"/>
+  <rect x="26" y="75" width="26" height="5" rx="2.5" fill="rgba(255,255,255,0.45)"/>
+  <!-- Precision Wrench Accent -->
+  <path d="M88.5 34.5a11.5 11.5 0 0 0-15.4 13.7L55.2 66.1a5.2 5.2 0 1 0 7.4 7.4l17.9-17.9a11.5 11.5 0 0 0 13.7-15.4l-6.6 6.6-5.7-5.7 6.6-6.6Z" fill="url(#cvfix-wrench)"/>
+  <circle cx="59" cy="69.8" r="2" fill="#0B0F17"/>
+</svg>
